@@ -1,0 +1,303 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>moveinformation_new</title>
+	<script src="https://use.fontawesome.com/caa469a06e.js"></script>
+	<link rel="shortcut icon" href="http://imageshack.com/a/img924/8909/kRPNSE.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- 最新編譯和最佳化的 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <!-- 選擇性佈景主題 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <!-- 最新編譯和最佳化的 JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <style>
+        body{
+		font-family:"微軟正黑體";
+            /*font-size:16px;*/
+        }
+        #mid {
+            /*border:1px solid #ff0000;*/
+            display: block;
+            margin: 7.5em auto;
+            width: 21.5em;
+            height: 20em;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+			#blank{
+			width:100%;
+			height:65px;
+			/*border: 1px solid ;*/
+			
+		}
+		
+		#movie_box{
+			font-size:20pt;
+			
+			padding-top:-3%;
+			padding-left:3%;
+			padding-right:3%;
+		}
+		#movie_box div{
+			display:inline-block;
+			<!--border: 1px solid ;-->
+		}
+		
+		#movie_button{
+			<!--padding-left:70%;-->
+			margin-left:70%;
+			min-width:300px;
+			font-size:18px;
+			
+					
+			
+		}
+		#movie_button a{
+			text-decoration:none;	
+			color:#666;
+		}
+		#movie_button a:hover{
+			color:#EEE;
+
+		}
+			#film_box{
+			padding:1% 10% 1% 10%;
+		}
+		#film{
+			text-align:center;
+			padding:13% 1% 13% 1%;
+			/*border: 1px solid ;*/
+		}
+		#film_data{
+			/*text-align:center;*/
+			padding:5% 1% 15% 1%;
+			/*border: 1px solid ;*/
+			font-size:28px;
+		}
+		#information_text{
+			font-size:25pt;
+			padding-top:1%;
+			padding-left:1%;
+			text-align:left;
+		}
+		#movienew_text {
+			<!-- padding-top:1%;
+			padding-left:3%;
+			padding-right:3%; -->
+			text-align:left;
+			font-size:20px;
+			margin-left:10%;
+			color:#6D4C41;
+			
+		}
+		
+		#movienew{
+			width:70%;
+			min-width:250px;
+			margin:0px auto;
+		}
+		.#new_img{
+			font-size:12px;
+			min-width:250px;
+		}
+		#new_img img{
+			display:block;
+			margin:0px auto;
+			width:50%;
+			min-width:230px;
+			
+		}
+		
+		#new_text{
+			font-size:25px;
+			padding-left:0px;
+			 
+			
+		}
+		#new-text{
+			font-size:18px;
+			padding-left:0px;
+			text-align:left;
+		}
+		
+		#cinema{
+			font-size:15px;
+			text-align:center;
+			padding: 3% 3% 3% 3%;
+		}
+        #tit {
+            <!-- margin: 0 30% 0 30%; -->
+            font-size: 30px;
+            /*text-align:center;*/
+            color: #0000ff;
+            margin-left: 10%;
+        }
+		#co{
+		
+		font-size:20px;
+		}
+		#ti{
+		margin:0px auto;
+		padding-left:30px;
+		font-size:20px;
+		width:90%;
+		}
+		#t{
+		width:100%;
+		margin-bottom:0;
+		padding-bottom:0;
+		<!--border:1px solid #ff0000;-->
+		
+		}
+    </style>
+</head>
+<body>
+    <div id="all">
+        <div id="top">
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Enjoy My Movie life</a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search" style="width:12em; display:inline-block;">
+                                <button type="submit" class="btn btn-default">
+                                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                        </form>
+						
+                        <ul class="nav navbar-nav navbar-right" style=";">
+							<li><a href="home.html">HOME</a></li>
+                            <li><a href="informationmove.html">排行榜</a></li>
+                            <li><a href="ttt.php">類別</a></li>
+							<li><a href="moveinformation.html">電影情報站</a></li>
+<li><a href="sign.html"><i class="fa fa-sign-out fa-1x" aria-hidden="true"></i> 登出</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-user fa-1x" aria-hidden="true"></i> 使用者 <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="information.html"><i class="fa fa-cog fa-1x" aria-hidden="true"></i> 基本資料</a></li>
+                                    <li><a href="mylove.php"><i class="fa fa-heart fa-1x" aria-hidden="true"></i> 我的最愛</a></li>
+                                    <li><a href="history.php"><i class="fa fa-paw fa-1x" aria-hidden="true"></i> 歷史紀錄</a></li>
+									<li><a href="later.php"><i class="fa fa-clock-o fa-1x" aria-hidden="true"></i> 稍後觀看</a></li>
+									<li><a href="inform.php"><i class="fa fa-envelope fa-1x" aria-hidden="true"></i> 通知</a></li>
+									
+									<!--<li class="divider"></li>-->
+                                </ul>
+							</li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </div>
+        </div>
+          <div id = "main_content">
+			
+			<div id = "information_text" style="color:#FB8C00; margin-left:5%">
+				電影情報站
+			</div>
+			<hr>
+			<div id = "movienew_text" >
+				<a href="filmreview.html" style="color:#4A148C;"><i class="fa fa-star-half-o fa-fw" aria-hidden="true" ></i>影評專區</a>
+				
+			</div>
+			<br/>
+			
+			<div id ="movienew">
+				
+				<div id ="new_text">
+				《飛躍奇蹟：Eddie the Eagle》影評：永不放棄的奮鬥翱翔
+				</div>
+				
+				
+				<div id ="new-text">
+					《飛躍奇蹟：Eddie the Eagle》改編自英國滑雪名將Eddie Edwards的事蹟，他從一個平民，
+					在沒有長期專業訓練，沒有雄厚資金援助，沒有顯赫背景的情況下，達成了前進奧運的夢想
+					，並打破英國的滑雪奧運紀錄。這部電影適合每一位在人生道路上奮鬥的你/妳觀賞，讓我們
+					在險惡難料的大環境中，找回堅持下去的動力，與追求理想的勇氣。</br>
+					泰隆艾格頓（Taron Egerton）所飾演的Eddie有著極為樸實單純的性格，僅僅為了一個簡單的
+					理念奮鬥不懈，就是要達成自己人生的輝煌時刻，無關乎名利，他發自靈魂深處地熱愛著運動
+					，畢生的夢就是成為奧運的選手。人生的第一本書奧運集錦深深激勵著Eddie，讓他儘管先天有
+					殘疾，依然不斷嘗試各種可能的運動，最後選擇了非常需要膽識與天賦的高台滑雪競技。這項
+					運動與非正規班出身的Eddie天衣無縫地契合，因為英國已經五十年沒有高台滑雪的奧運代表選
+					手，他有很大的機會越過其他項目的層層篩選，走最快捷徑成為國家代表。</br>
+					<div id ="new_img">
+						<img src="http://www.blackcoffeeseries.com/wp-content/uploads/2016/04/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7-2016-04-13-%E4%B8%8B%E5%8D%8812.17.33.png" />
+					
+					</div>
+				</div>
+				<div id ="new-text">
+					
+					《飛躍奇蹟：Eddie the Eagle》以幽默詼諧的調性敘述Eddie的自我摸索過程，深具娛樂效果
+					且令人動容，增肥扮醜演出的泰隆艾格頓，頂著唐吉訶德般的傻勁，四處求教不斷嘗試錯誤，
+					不怕失敗堅持向前衝的熱血，感動了在滑雪場工作的退休美國前奧運國手Peary。Peary由休傑
+					克曼（Hugh Jackman）飾演，是一名曾經飛黃騰達的天才選手，卻因為個人生活混亂影響了職
+					涯，遭到國家隊除名，從此在滑雪場過著渾渾噩噩的日子，靠著酗酒逃避過去的懦弱。Eddie
+					天兵似地闖入Peary的生活，兩人不鬧不相識，在一次Eddie盲目練習而受重傷後，Peary深受他
+					簡單熱愛運動且不肯放棄的精神感動，彷彿看見了年輕氣盛的自己。為了不讓Eddie留下與自
+					己年輕時一樣的遺憾，Peary決定擔任他的教練，達成前進奧運的目標。</br>
+					在Eddie永不放棄的故事主軸之外，電影透過Peary的訓練過程來傳達運動的真正精神，Peary厭
+					惡強隊芬蘭的科學化制式訓練，把運動拆解開來變成數據，公式以及機械化動作，他教導Eddie
+					的是，真正融入並熱愛這項運動，想像自己在飛翔，放鬆肢體學習飛的基本原理，然後享受它
+					。如同天下千百種技藝，唯有享受且樂在其中，才有可能在追求樂趣的過程中，不知不覺地達
+					成巔峰成就。芬蘭冠軍在賽前與Eddie一同搭乘電梯時，也說了一段話印證這個觀點：「底下那
+					些人都不懂，我們滑雪不是為了分數，而是解放我們的靈魂，讓我們感到真實地活著。」「我
+					不會因為成績不好而難過，但我會因為沒有盡力而沮喪，即便是盡力後如你成績墊底，我也會
+					快樂。」</br>
+					<div id ="new_img">
+						<img src="http://www.blackcoffeeseries.com/wp-content/uploads/2016/04/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7-2016-04-13-%E4%B8%8B%E5%8D%8812.17.55.png"/>
+					
+					</div>
+				</div>
+				<div id ="new-text">
+					「拆除」這個行為在電影中算是最直白的隱喻了，電影開頭Davis在寫信時，振筆疾書的狀態下
+					唸了一句：「生活中的一切都像是隱喻…」，緊接著開始了瘋狂拆解物品的旅程。小從咖啡機，
+					大到拆除房子，他就是想要拆光生活中層層包裝的物件，去發掘事務運作的原理，為什麼自己
+					的生活會是現在這個樣子？為什麼他好像對於身邊的事情漫不經心？直到最後Davis才看清自己
+					的自我防衛機制，發現自己其實還愛著妻子，只是不敢面對婚姻失敗而層層武裝自己。仔細看的
+					話還會發現，Davis在拆除的牆上寫了Karen的名字，下一幕就直接殺去她家找她談心。</br>
+					3.客服Karen象徵著理解自己難處的陪伴</br>
+					<div id = "new_img">
+						<img src="http://www.blackcoffeeseries.com/wp-content/uploads/2016/05/20160316-jake-gyllenhaal-naomi-watts-demolition-photos-10072014-14.jpg"/>
+					
+					</div>
+				</div>
+				<div id ="new-text">
+					整個《飛躍奇蹟：Eddie the Eagle》的故事便是以「簡單快樂追逐夢想」貫穿，在處處
+					有利益考量的工作生活中，喚醒人們內心深處那曾經嚮往飛翔的老鷹，曾經不顧一切地
+					，純粹地追尋一個目標的無窮動力。每個人的內心都存在著Eddie家庭裡的三個角色，否
+					定「幻想」重視現實的爸爸，支持兒子夢想的媽媽，還有追尋夢想的自已，如何在追夢的
+					過程中保有持續的動力，讓三個角色和平共處，是我們必須不斷處理的難題。相信所有曾
+					經掙扎過的人，看到媽媽將Eddie小時候童言童語地說要裝奧運金牌的鐵盒，交給打破英國
+					奧運紀錄歸國的Eddie時，都會泛起感動的淚光。</br>
+					</br>
+					</br>
+					</br>
+					
+				</div>
+				
+				
+			</div>
+			
+</div>
+
+</body>
+</html>

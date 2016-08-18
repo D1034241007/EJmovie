@@ -1,0 +1,32 @@
+﻿<html>
+<head>
+	<title>電影新增</title>
+	<meta charset="utf8"/>
+	<style>
+		table td{text-align:center;}
+	</style>
+</head>
+<body>
+<div id="top" style="border:1px solid #09f; height:500px; width:70%; margin:20px auto;">
+	<form id="form2" name="form2" method="POST" style="margin-left:30px ;margin-top:30px">
+		片  名：<input type = "text" name ="MONAME" size="35"/><p/>
+		主演1：<input type = "select" name ="LEADACTOR" option=""/>&nbsp;&nbsp;&nbsp;
+		主演2：<input type = "text" name ="LEADACTRESS"/><p/>
+		配角1：<input type = "text" name ="SUPPACTOR"/>&nbsp;&nbsp;&nbsp;
+		配角2：<input type = "text" name ="SUPPACTRESS"/><p/>
+		導 演：<input type = "text" name ="DIRECTOR"/><p/>
+		類 別：<input type = "text" name ="CLASS"/><p/>
+		上映日：<input type = "text" name ="DATEONE" placeholder="0000-00-00"/>&nbsp;&nbsp;&nbsp;
+		下檔日：<input type = "text" name ="DATETWO" placeholder="0000-00-00"/><p/>
+		片 長：<input type = "text" name ="LENGTH"  placeholder="00:00:00"/><p/>
+		簡 介：<textarea rows="5" name="INTRODUCT" cols="50" ></textarea><p/>
+		連 結：<input type = "text" name ="VIDEO"/><p/>
+		
+		<input type="button" value="新增電影" type="submit" onclick="form2.action='movinsert.php';form2.submit();"/>
+		<input type="button" value="刪除" type="submit"onclick="form2.action='movdelete.php';form2.submit();" />
+		<input type="button" value="更新密碼" type="submit"onclick="form2.action='movupdate.php';form2.submit();" />
+		<input type="button" value="至查詢頁" onclick="location.href='movindex.php'" />
+	</form>
+	</div>
+</body>
+</html>

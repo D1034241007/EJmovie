@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>moveinformation_new</title>
+	<script src="https://use.fontawesome.com/caa469a06e.js"></script>
+	<link rel="shortcut icon" href="http://imageshack.com/a/img924/8909/kRPNSE.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- 最新編譯和最佳化的 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <!-- 選擇性佈景主題 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <!-- 最新編譯和最佳化的 JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <style>
+        body{
+		font-family:"微軟正黑體";
+            /*font-size:16px;*/
+        }
+        #mid {
+            /*border:1px solid #ff0000;*/
+            display: block;
+            margin: 7.5em auto;
+            width: 21.5em;
+            height: 20em;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+			#blank{
+			width:100%;
+			height:65px;
+			/*border: 1px solid ;*/
+			
+		}
+		
+		#movie_box{
+			font-size:20pt;
+			
+			padding-top:-3%;
+			padding-left:3%;
+			padding-right:3%;
+		}
+		#movie_box div{
+			display:inline-block;
+			<!--border: 1px solid ;-->
+		}
+		
+		#movie_button{
+			<!--padding-left:70%;-->
+			margin-left:70%;
+			min-width:300px;
+			font-size:18px;
+			
+					
+			
+		}
+		#movie_button a{
+			text-decoration:none;	
+			color:#666;
+		}
+		#movie_button a:hover{
+			color:#EEE;
+
+		}
+			#film_box{
+			padding:1% 10% 1% 10%;
+		}
+		#film{
+			text-align:center;
+			padding:13% 1% 13% 1%;
+			/*border: 1px solid ;*/
+		}
+		#film_data{
+			/*text-align:center;*/
+			padding:5% 1% 15% 1%;
+			/*border: 1px solid ;*/
+			font-size:28px;
+		}
+		#information_text{
+			font-size:25pt;
+			padding-top:1%;
+			padding-left:1%;
+			text-align:left;
+		}
+		#movienew_text {
+			<!-- padding-top:1%;
+			padding-left:3%;
+			padding-right:3%; -->
+			text-align:left;
+			font-size:20px;
+			margin-left:10%;
+			color:#6D4C41;
+			
+		}
+		
+		#movienew{
+			width:70%;
+			min-width:250px;
+			margin:0px auto;
+		}
+		.#new_img{
+			font-size:12px;
+			min-width:250px;
+		}
+		#new_img img{
+			display:block;
+			margin:0px auto;
+			width:50%;
+			min-width:230px;
+			
+		}
+		
+		#new_text{
+			font-size:25px;
+			padding-left:0px;
+			 
+			
+		}
+		#new-text{
+			font-size:18px;
+			padding-left:0px;
+			text-align:left;
+		}
+		
+		#cinema{
+			font-size:15px;
+			text-align:center;
+			padding: 3% 3% 3% 3%;
+		}
+        #tit {
+            <!-- margin: 0 30% 0 30%; -->
+            font-size: 30px;
+            /*text-align:center;*/
+            color: #0000ff;
+            margin-left: 10%;
+        }
+		#co{
+		
+		font-size:20px;
+		}
+		#ti{
+		margin:0px auto;
+		padding-left:30px;
+		font-size:20px;
+		width:90%;
+		}
+		#t{
+		width:100%;
+		margin-bottom:0;
+		padding-bottom:0;
+		<!--border:1px solid #ff0000;-->
+		
+		}
+    </style>
+</head>
+<body>
+    <div id="all">
+        <div id="top">
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Enjoy My Movie life</a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search" style="width:12em; display:inline-block;">
+                                <button type="submit" class="btn btn-default">
+                                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                        </form>
+                        <ul class="nav navbar-nav navbar-right" style=";">
+							<li><a href="home.html">HOME</a></li>
+                            <li><a href="informationmove.html">排行榜</a></li>
+                            <li><a href="ttt.php">類別</a></li>
+							<li><a href="moveinformation.html">電影情報站</a></li>
+<li><a href="sign.html"><i class="fa fa-sign-out fa-1x" aria-hidden="true"></i> 登出</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-user fa-1x" aria-hidden="true"></i> 使用者 <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="information.html"><i class="fa fa-cog fa-1x" aria-hidden="true"></i> 基本資料</a></li>
+                                    <li><a href="mylove.php"><i class="fa fa-heart fa-1x" aria-hidden="true"></i> 我的最愛</a></li>
+                                    <li><a href="history.php"><i class="fa fa-paw fa-1x" aria-hidden="true"></i> 歷史紀錄</a></li>
+									<li><a href="later.php"><i class="fa fa-clock-o fa-1x" aria-hidden="true"></i> 稍後觀看</a></li>
+									<li><a href="inform.php"><i class="fa fa-envelope fa-1x" aria-hidden="true"></i> 通知</a></li>
+									
+									<!--<li class="divider"></li>-->
+                                </ul>
+							</li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </div>
+        </div>
+          <div id = "main_content">
+			<div id = "information_text" style="color:#FB8C00; margin-left:5%">
+				電影情報站
+			</div>
+			<hr>
+			<div id = "movienew_text" >
+				<a href="filmreview.html" style="color:#4A148C;"><i class="fa fa-star-half-o fa-fw" aria-hidden="true" ></i>影評專區</a>
+				
+			</div>
+			<br/>
+			
+			<div id ="movienew">
+				<div id ="new_text">
+				《傑森包恩：Jason Bourne》影評：正宗原味的續集，最強不敗的特務
+				</div>
+				<div id ="new-text">
+					沉寂多年終於再度現身的Jason Bourne身手依然矯健不凡，和《神鬼認證》第二集與第三
+					集導演Greengrass延續了正宗風格，手搖式攝影風格在《傑森包恩》中仍舊強烈，包括希
+					臘追擊與拉斯維加斯的飆車戲都和過去有一樣的水準，這次諜對諜的複雜程度也包含了CIA
+					內部的矛盾！劇情最精彩的設計是一邊探究Bourne年輕時遭遇的悲劇真相，一邊與當代最
+					新時事的網路安全監控結合，而CIA的情報員們這次再也不是總看不見Bourne的車尾燈，由
+					Alicia Vikander飾演的網路安全分析師甚至多次精準地掌握了Bourne的策略，讓雙方的對
+					決更加緊繃刺激！與關鍵殺手對決的戲碼更是與Bourne過去一切的所為都有關聯，許多細節
+					設定可以令系列作的忠實影迷看到熟悉的痕跡與導演的誠意。</br>
+					《傑森包恩》的故事背景延續了第三集最後通牒的鋪陳，Nicky與Bourne一同逃亡之後獨自
+					執行任務，為了揭露更多見不得人的CIA秘密行動而奔走，與歐洲的自由駭客組織聯手行動
+					，當她靠著過去CIA的舊式電腦入侵伺服器盜出新資料，遠在加州的蘭利總部裡，一名比
+					Nicky更精明的女分析師Lee察覺了異象，開始追蹤Nicky的動向並且推測她將與Bourne聯繫。
+					與此同時，前一集神隱消失的Bourne一直在流浪中尋找贖罪的方法，他始終無法放下自己是
+					自願成為殺人機器的過去，身份與道德觀念的掙扎令他的情緒從過去的困惑轉為痛苦，心中
+					的無奈與失落只能透過一場又一場的自虐拳擊賽來發洩，直到Nicky到來將他拽出那個輪迴。</br>
+					<div id ="new_img">
+						<img src="http://www.blackcoffeeseries.com/wp-content/uploads/2016/07/JourneCreek.jpg" />
+					</div>
+				</div>
+				<div id ="new-text">
+					以下將有較多的劇情細節解析，還沒看完電影的可以先把文章存起來晚點看唷！</br>
+					Nicky在CIA的臥底情報資料庫發現了絆腳石計劃的詳細內容，原來Bourne的父親George Webb
+					就是絆腳石計劃的創始人！而這個計畫早在Bourne加入以前就在監控著他（Bourne本名：David Webb）
+					，父親並不如Bourne所以為的與計畫無關，Nicky必須將真相告訴他。兩人約在雅典娜廣場會面，
+					這場監控中逃脫的追逐戰是電影的第一段精彩高潮，相比第二集在德國亞歷山大廣場的一幕，本
+					集的動作場面融入更多混亂情況，同時間有主角們，暴動民眾，鎮暴警察，重機刑警，CIA地面探
+					員，CIA狙擊手等人，在極度動態的環境下營造出步步進逼分秒必爭的追逐戲。Bourne善用當地暴動
+					衝突干擾警察，再如鬼影般突襲CIA探員，然而科技更升級的監控力量使得分析師Lee很快地替狙擊
+					手規劃出最佳攻擊點，預測了Bourne的行動路線，令殺手順利地擊殺了Nicky，這是Bourne第一次位居下風。</br>
+					<div id ="new_img">
+						<img src="http://www.blackcoffeeseries.com/wp-content/uploads/2016/07/jason-bourne-matt-damon-julia-stiles.jpg" />
+					</div>
+				</div>
+				<div id ="new-text">
+					本集殺手由Vincent Cassel飾演，他過去也是黑薔薇計劃中的殺手探員，在第三集Bourne揭露真相後暴
+					露行蹤，受困敘利亞被刑求，因此對Bourne懷恨在心，將中情局的行動視為一場復仇。他同時也是多年
+					前貝魯特恐怖攻擊事件的主使者，那場汽車爆炸就是為了殺Bourne的父親滅口，因為他在最後一刻良心
+					不安決定放棄計劃。分析師Lee自告奮勇承接追查Bourne的職務，甚至很有信心利用策略讓Bourne歸隊，
+					在她美豔且正義凜然的外表下，實際上藏著巨大的權力野心，收編逮捕Bourne只是她放長線釣大魚的借
+					刀殺人計的一環，是要利用Bourne對整個絆腳石計劃的不滿，除掉自己的長官杜威局長。老牌影星
+					Tommy Lee Jones飾演的Dewey局長則是比前幾集的反派上司更具陰險的氣息，為了暗殺社群媒體創辦人
+					Aaron Kalloor不惜讓自己也中彈，對於計畫確保的堅定不容質疑，連分析能力極強的大將Lee也可以犧牲。</br>
+					<div id = "new_img">
+						<img src="http://www.blackcoffeeseries.com/wp-content/uploads/2016/07/vincent-cassel.jpg" />
+					</div>
+				</div>
+				<div id ="new-text">
+					Nicky發現的CIA秘密資料中有「深夢計畫（Deepdream）」及「鐵腕計畫（Ironhand）」，深夢計畫即是
+					透過社群媒體「深夢」（影射現實生活中的Facebook或是Twitter），來監控民眾的社群行為，在雅典追
+					捕Bourne的時候，Lee便曾指示部下篩選該地區的現場社群分享，過濾是否有人看見Bourne。「鐵腕計畫」
+					則是更全面的戰略監控，包含了其他應用類App都成為監控工具，Aaron Kalloor在發表會時漸漸感到與CIA
+					的合作太過危險，希望可以退出行動，然而Dewey不允許這項強大的工具從手中溜走，動用司法部資源威脅
+					艾倫。Aaron深知如果跟著Dewey的牌繼續玩下去，遲早死的是自己，於是他搶先一步要在賭城的座談會上
+					自己先披露這項陰險的合作案，用玉石俱焚的方式反擊。</br>
+					Bourne在Nicky死後接手了絆腳石計劃的機密內容，發現了自己父親之死的不尋常處，一路追查到英國的前
+					任負責人Malcolm Smith身上，在這裡展開第二場諜對諜追逐戰。Bourne一貫的戰略都是製造混亂，從中找
+					到掩護並追擊目標，此時CIA的兩批人馬也已經抵達，但Dewey局長與Lee打著完全不同的算盤，Dewey利用
+					殺手要除掉Bourne，斷絕可能被揭發更多秘密的可能性，Lee則是想幫助Bourne藉此利用他來除掉局長。
+					當Bourne製造附近街區的多重警報趁隙帶走Smith時，殺手一路殲滅了Lee的CIA探員並與Bourne對峙，直至
+					此刻Bourne才回想起來當年父親死於汽車炸彈時，殺手的面孔就在現場出現過，導致這一切事件的元兇現
+					在只剩下Dewey局長與那名殺手了，Bourne隨後在Lee的協助下通關回到美國，前往賭城終結始作俑者。
+					Bourne曾經是因為父親死於恐怖攻擊，才想要成為CIA秘密幹員保護美國人免於類似的事件，事情的真相
+					其實是一場設好的局，令他憤怒不已。</br>
+					<div id ="new_img">
+						<img src="http://www.blackcoffeeseries.com/wp-content/uploads/2016/07/bourne-is-back-matt-damon.jpg" />
+					</div>
+				</div>
+				<div id ="new-text">
+					賭城座談會是Aaron與Dewey的最後交鋒，Aaron的真相從喉嚨快出來時殺手的子彈已飛，及時趕到的Bourne
+					用會場聚光燈順利干擾狙擊視野，並利用大型會場提供的室內定位器與採訪收音設備找到了杜威局長。「
+					唯有接受你真正的樣子，才有可能獲得平靜。」本集取名為《傑森包恩》即是呼應這個主旨，Bourne必須
+					接受自己的殺手身份的本能，以及David Web的根本善良，他們同時並存且可貴的是Bourne現在學會選擇，
+					從騙局中被解放後，Bourne現在的選擇是復仇。緊接著是電影最終的高潮-賭城的大規模汽車特技戲，裝甲
+					車與警探轎車的野蠻對決，Bourne躲過了前兩集都出現過的T字追撞法，駛上賭場斜坡施展泰山壓頂逼迫逃
+					逸殺手放棄裝甲車。</br>
+					<div id ="new_img">
+						<img src="http://www.blackcoffeeseries.com/wp-content/uploads/2016/07/jason-bourne-alicia-vikander.jpg" />
+					</div>
+				</div>
+				<div id ="new-text">
+					兩人在下水道進行殊死戰，憤怒的Bourne招式顯得比以往野蠻，以隨手拿起的廢棄鐵罐對決殺手的軍刀，這
+					段打鬥沒有快節奏的配樂，深沉打擊聲加上兩人緊迫的呼吸聲更顯得有宿命之戰的感覺，Bourne最終勒死了
+					殺手，一反他前兩集不殺的原則，因為這名殺手與他「互相有仇」，不像第二集的殺手是單方面的仇（殺死
+					女友Marie的兇手），以及第三集無冤無仇的放過彼此。結局完整揭露Lee的野心，她毛遂自薦成為CIA局長，
+					並試圖以Bourne父親的殉職貢獻勳章收買他，然而Bourne早已透過賭場的錄音設備得知，Lee不過又是另一個
+					把自己當做棋子的陰險人物（只不過偽裝得比較好），他再度神隱消失，劇情留下了無限想像的可能。</br>
+					</br>
+					</br>
+					</br>
+				</div>
+				
+			</div>
+			
+</div>
+
+</body>
+</html>

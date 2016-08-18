@@ -1,0 +1,218 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>moveinformation_new</title>
+	<script src="https://use.fontawesome.com/caa469a06e.js"></script>
+	<link rel="shortcut icon" href="http://imageshack.com/a/img924/8909/kRPNSE.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- 最新編譯和最佳化的 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <!-- 選擇性佈景主題 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <!-- 最新編譯和最佳化的 JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <style>
+        body{
+		font-family:"微軟正黑體";
+            /*font-size:16px;*/
+        }
+        
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+		
+		
+		#movie_box{
+			font-size:20pt;
+			
+			padding-top:-3%;
+			padding-left:3%;
+			padding-right:3%;
+		}
+		#movie_box div{
+			display:inline-block;
+			<!--border: 1px solid ;-->
+		}
+		
+		#movie_button{
+			<!--padding-left:70%;-->
+			margin:0px auto;
+			min-width:300px;
+			font-size:18px;
+			
+					
+			
+		}
+		#movie_button a{
+			text-decoration:none;	
+			color:#666;
+		}
+		#movie_button a:hover{
+			color:#EEE;
+
+		}
+	
+		#information_text{
+			font-size:30pt;
+			padding-top:1%;
+			padding-left:1%;
+			text-align:left;
+		}
+			#movienew_text {
+			<!-- padding-top:1%;
+			padding-left:3%;
+			padding-right:3%; -->
+			text-align:left;
+			font-size:20px;
+			margin-left:10%;
+			color:#6D4C41;
+			
+		}
+		#movienew{
+			width:70%;
+			min-width:250px;
+			margin:0px auto;
+		}
+		
+		#new_img{
+			font-size:12px;
+			min-width:250px;
+		}
+		#new_img img{
+			display:block;
+			margin:0px auto;
+			width:50%;
+			min-width:230px;
+			
+		}
+		
+		#new_text{
+			font-size:25px;
+			padding-left:0px;
+			 
+			
+		}
+		#new-text{
+			font-size:18px;
+			padding-left:0px;
+			text-align:left;
+		}
+		
+		
+		#cinema{
+			font-size:15px;
+			text-align:center;
+			<!-- padding: 3% 3% 3% 3%; -->
+		}
+     
+    </style>
+</head>
+<body>
+    <div id="all">
+        <div id="top">
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Enjoy My Movie life</a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search" style="width:12em; display:inline-block;">
+                                <button type="submit" class="btn btn-default">
+                                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                        </form>
+						
+                        <ul class="nav navbar-nav navbar-right" style=";">
+							<li><a href="home.html">HOME</a></li>
+                            <li><a href="informationmove.html">排行榜</a></li>
+                            <li><a href="ttt.php">類別</a></li>
+							<li><a href="moveinformation.html">電影情報站</a></li>
+<li><a href="sign.html"><i class="fa fa-sign-out fa-1x" aria-hidden="true"></i> 登出</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-user fa-1x" aria-hidden="true"></i> 使用者 <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="information.html"><i class="fa fa-cog fa-1x" aria-hidden="true"></i> 基本資料</a></li>
+                                    <li><a href="mylove.php"><i class="fa fa-heart fa-1x" aria-hidden="true"></i> 我的最愛</a></li>
+                                    <li><a href="history.php"><i class="fa fa-paw fa-1x" aria-hidden="true"></i> 歷史紀錄</a></li>
+									<li><a href="later.php"><i class="fa fa-clock-o fa-1x" aria-hidden="true"></i> 稍後觀看</a></li>
+									<li><a href="inform.php"><i class="fa fa-envelope fa-1x" aria-hidden="true"></i> 通知</a></li>
+									
+									<!--<li class="divider"></li>-->
+                                </ul>
+							</li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </div>
+        </div>
+          <div id = "main_content">
+			<div id = "information_text" style="color:#FB8C00; margin-left:5%">
+				電影情報站
+			</div>
+			<hr>
+			<div id = "movienew_text" >
+				<a href="moveinformation_new.html"><i class="fa fa-newspaper-o fa-fw" aria-hidden="true" style="color:#6D4C41;"></i> 電影頭條</a>
+				
+			</div>
+			<br/>
+			
+			<div id ="movienew">
+				
+				<div id = new_text>
+					羅柏蘭登教授回來了！湯姆漢克在《達文西密碼》系列電影新作《地獄》中再展身手
+				</div>
+				
+				<div id = new_img>
+					<img src="http://img.chinatimes.com/newsphoto/2016-06-30/656/20160630005545.jpg" />
+					<p>《VOGUE》雜誌提供</p>
+				</div>
+				<div id = new-text>
+				大導演朗霍華及湯姆漢克為《地獄》宣傳不遺餘力，日前亞洲巡迴至新加坡時，導演朗霍華、湯姆漢克及伊凡卡漢的親民指數超高
+				，不但有問必答，還和現場媒體民眾歡樂自拍，湯姆漢克頻出幽默發言更是逗得全場大笑，也看的出影帝對於新片有多重視。今天
+				發布的最新預告曝光更多畫面，蘭登教授突然在義大利佛羅倫斯醒來，不僅失去對他而言最珍貴的記憶，更遭受神秘組織追殺、瀕
+				臨生命威脅，全因為身藏一個左右全球人類滅亡關鍵的線索，而且只有蘭登教授能夠解開！台灣預定於11月4日上映。</BR>
+
+				《達文西密碼》系列電影新作這次加入的新角色是年輕女醫師席耶娜‧布魯克，由以《愛的萬物論》的Felicity Jones費莉絲蒂‧瓊斯
+				飾演，對於能夠打敗眾多一線女星參與演出，她興奮地說：「感覺如何？當然是棒極了！團隊成員都很歡迎我，這段時間非常愉快。」</BR>
+
+				湯姆漢克飾演的羅柏蘭登教授這次深入義大利佛羅倫斯，在百花大教堂、維奇奧宮等古蹟間追查波提伽利《地獄圖》所引發的種種
+				謎團，在環環相扣的線索間，蘭登教授竟發現這是一場生化危機。？導演朗霍華表示，羅柏蘭登教授將會損失慘重，不但生理、心
+				理雙重障礙，還增加了非常多令人焦慮的元素，只有費莉絲蒂‧瓊斯飾演的女醫師席耶娜‧布魯克能帶他脫離險境。</BR>
+
+				再度與金獎團隊合作，湯姆漢克說：「在第一部《達文西密碼》裡，蘭登教授被捲入一個詭異的神學事件，然後在《天使與魔鬼》
+				和創造性理論搏鬥，而這次在《地獄》則是必須面臨現代對於地獄存在的觀念。」導演朗霍華說：「我們有個類似地鐵路線的圖表
+				，上面闡述著罪過和懲罰。事實上，它確實影響了許多視覺效果和某些場景，以一個非常電影的形式呈現。」</BR>
+
+				丹布朗、朗霍華及湯姆漢克已發展出高度默契，面對外界的高度期待，導演朗霍華笑說：「改編電影一直是個挑戰，書中所有精采
+				元素都如此難以取捨的時候，就必須做出許多痛苦的選擇。電影不是小說，電影必須遵守自己的邏輯形式，我說的好像很簡單，因為
+				負責編輯工作的人不是我！」原著作者丹布朗則說：「作家的確是電影劇本最嚴厲的評論家，作者把所有發想偏好放進小說裡，當電
+				影劇本出爐的時候，劇情可能只有書裡的百分之十，這是很嚇人的！但這次《地獄》的改編劇本非常棒，它不只符合我的口味，把正
+				確的情節重點帶出來，還自由運用新增章節來強化許多故事架構，對於這個劇本我十分滿意。」</BR>
+
+				※來源：索尼影業</BR>
+
+					
+				</div>
+			</div>
+			
+</div>
+
+</body>
+</html>

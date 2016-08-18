@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>電影情報站</title>
+	<script src="https://use.fontawesome.com/caa469a06e.js"></script>
+	<link rel="shortcut icon" href="http://imageshack.com/a/img924/8909/kRPNSE.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- 最新編譯和最佳化的 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <!-- 選擇性佈景主題 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <!-- 最新編譯和最佳化的 JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<style>
+		body{ 
+			margin:0; 
+			font-family:'微軟正黑體';
+		}
+		#all{
+			width:100%;
+		}
+		#information_text{
+			font-size:25pt;
+			padding-top:1%;
+			padding-left:1%;
+			text-align:left;
+		}
+		#movienew_text , #cinema_text , #comment_text{
+			padding-top:1%;
+			padding-left:3%;
+			padding-right:3%;
+			text-align:left;
+			font-size:20px;
+			margin-left:10%;
+			color:#6D4C41;
+			
+		}
+		
+		.movienew{
+			width:70%;
+			/*border:1px solid #f00;*/
+			margin:1px auto;
+			padding:0%; 15%; 0%; 25%;
+			
+		}
+		.movienew div{
+			display:inline-block;
+			/*border: 1px solid ;*/
+			padding:0%; 15%; 0%; 25%;
+			
+		}
+		.new_img{
+			width:210px;
+			height:160px;	
+		}
+		.new_text{
+			display:inline-block;
+			text-align:center;
+			text-overflow:inherit;
+		}
+		#cinema{
+			text-align:center;
+			padding: 3% 3% 3% 3%;
+		}
+		
+		#cinema div{
+			display:inline-block;
+		//	border: 1px solid ;
+			
+		}
+		#cinema_position{
+			padding: 3% 3% 3% 3%;
+		}
+		#comment{
+			text-align:center;
+		}
+		
+		#comment div{
+		//	border: 1px solid ;
+			display:inline-block;
+		}
+		#comment_img div , #comment_content div{
+			display:inline-block;
+		//	border: 1px solid ;
+			
+		}
+		#comment_img , #comment_content{
+			padding: 3% 3% 3% 3%;
+			
+		}
+		
+		
+	</style>
+</head>
+<body>
+	<div id="all">
+		<div id="top">
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Enjoy My Movie life</a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search" style="width:12em; display:inline-block;">
+                                <button type="submit" class="btn btn-default">
+                                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                        </form>
+						
+                         <ul class="nav navbar-nav navbar-right" style=";">
+							<li><a href="home.html">HOME</a></li>
+                            <li><a href="informationmove.html">排行榜</a></li>
+                            <li><a href="ttt.php">類別</a></li>
+							<li><a href="moveinformation.html">電影情報站</a></li>
+<li><a href="sign.html"><i class="fa fa-sign-out fa-1x" aria-hidden="true"></i> 登出</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-user fa-1x" aria-hidden="true"></i> 使用者 <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="information.html"><i class="fa fa-cog fa-1x" aria-hidden="true"></i> 基本資料</a></li>
+                                    <li><a href="mylove.php"><i class="fa fa-heart fa-1x" aria-hidden="true"></i> 我的最愛</a></li>
+                                    <li><a href="history.php"><i class="fa fa-paw fa-1x" aria-hidden="true"></i> 歷史紀錄</a></li>
+									<li><a href="later.php"><i class="fa fa-clock-o fa-1x" aria-hidden="true"></i> 稍後觀看</a></li>
+									<li><a href="inform.php"><i class="fa fa-envelope fa-1x" aria-hidden="true"></i> 通知</a></li>
+									
+									<!--<li class="divider"></li>-->
+                                </ul>
+							</li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </div>
+		<div id = "main_content">
+			
+			<div id = "information_text" style="color:#FB8C00; margin-left:5%">
+				<a href="moveinformation.html">
+				電影情報站
+				</a>
+			</div>
+			<hr>
+			<div id = "movienew_text" >
+				<i class="fa fa-star-half-o fa-fw" aria-hidden="true" style="color:#6D4C41;"></i>影評專區
+				</div>
+			</br>
+			<div class = movienew>
+				<div class = new_img>
+				<a href="filmreview1.html">
+				<img src="http://img.ltn.com.tw/Upload/ent/page/800/2016/08/13/phpXlLpvc.jpg" width="200px" height="150px">
+				</a>
+				</div>
+				<div class = new_text>
+				<a href="filmreview1.html">
+				《自殺突擊隊：Suicide Squad》影評：危險致命又可愛真誠的反派角色！
+				</a>
+				</div>
+			</div>
+			<div class = movienew>
+				<div class = new_img>
+				<a href="filmreview2.html">
+				<img src="http://www.blackcoffeeseries.com/wp-content/uploads/2016/07/JourneCreek.jpg" width="200px" height="150px">
+				</a>
+				</div>
+				<div class = new_text>
+				<a href="filmreview2.html">
+				《傑森包恩：Jason Bourne》影評：正宗原味的續集，最強不敗的特務
+				</a>
+				</div>
+			</div>
+			<div class = movienew>
+				<div class = new_img>
+				<a href="filmreview3.html">
+				<img src="http://www.blackcoffeeseries.com/wp-content/uploads/2016/05/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7-2016-05-22-%E4%B8%8B%E5%8D%882.14.16.png" width="200px" height="150px">
+				</a>
+				</div>
+				<div class = new_text>
+				<a href="filmreview3.html">
+				《崩壞人生：Demolition》影評：劇痛後的麻木，崩壞後的坦然
+				</a>
+				</div>
+			</div>
+			<div class = movienew>
+				<div class = new_img>
+				<a href="filmreview4.html">
+				<img src="http://i.imgur.com/vtXrH9p.png" width="200px" height="150px">
+				</a>
+				</div>
+				<div class = new_text>
+				<a href="filmreview4.html">
+				《金錢怪獸：Money Monster》影評：人的性命值多少股價？
+				</a>
+				</div>
+			</div>
+			<div class = movienew>
+				<div class = new_img>
+				<a href="filmreview5.html">
+				<img src="http://www.blackcoffeeseries.com/wp-content/uploads/2016/04/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7-2016-04-13-%E4%B8%8B%E5%8D%8812.17.33.png" width="200px" height="150px">
+				</a>
+				</div>
+				<div class = new_text>
+				<a href="filmreview5.html">
+				《飛躍奇蹟：Eddie the Eagle》影評：永不放棄的奮鬥翱翔
+				</a>
+				</div>
+				</br>
+				</br>
+				</br>
+				</br>
+				</br>
+			</div>
+			</div>
+		</div>	
+	</div>
+</body>
+</html>

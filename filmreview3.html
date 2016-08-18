@@ -1,0 +1,337 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>moveinformation_new</title>
+	<script src="https://use.fontawesome.com/caa469a06e.js"></script>
+	<link rel="shortcut icon" href="http://imageshack.com/a/img924/8909/kRPNSE.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- 最新編譯和最佳化的 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <!-- 選擇性佈景主題 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <!-- 最新編譯和最佳化的 JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <style>
+        body{
+		font-family:"微軟正黑體";
+            /*font-size:16px;*/
+        }
+        #mid {
+            /*border:1px solid #ff0000;*/
+            display: block;
+            margin: 7.5em auto;
+            width: 21.5em;
+            height: 20em;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+			#blank{
+			width:100%;
+			height:65px;
+			/*border: 1px solid ;*/
+			
+		}
+		
+		#movie_box{
+			font-size:20pt;
+			
+			padding-top:-3%;
+			padding-left:3%;
+			padding-right:3%;
+		}
+		#movie_box div{
+			display:inline-block;
+			<!--border: 1px solid ;-->
+		}
+		
+		#movie_button{
+			<!--padding-left:70%;-->
+			margin-left:70%;
+			min-width:300px;
+			font-size:18px;
+			
+					
+			
+		}
+		#movie_button a{
+			text-decoration:none;	
+			color:#666;
+		}
+		#movie_button a:hover{
+			color:#EEE;
+
+		}
+			#film_box{
+			padding:1% 10% 1% 10%;
+		}
+		#film{
+			text-align:center;
+			padding:13% 1% 13% 1%;
+			/*border: 1px solid ;*/
+		}
+		#film_data{
+			/*text-align:center;*/
+			padding:5% 1% 15% 1%;
+			/*border: 1px solid ;*/
+			font-size:28px;
+		}
+		#information_text{
+			font-size:25pt;
+			padding-top:1%;
+			padding-left:1%;
+			text-align:left;
+		}
+		#movienew_text {
+			<!-- padding-top:1%;
+			padding-left:3%;
+			padding-right:3%; -->
+			text-align:left;
+			font-size:20px;
+			margin-left:10%;
+			color:#6D4C41;
+			
+		}
+		
+		#movienew{
+			width:70%;
+			min-width:250px;
+			margin:0px auto;
+		}
+		.#new_img{
+			font-size:12px;
+			min-width:250px;
+		}
+		#new_img img{
+			display:block;
+			margin:0px auto;
+			width:50%;
+			min-width:230px;
+			
+		}
+		
+		#new_text{
+			font-size:25px;
+			padding-left:0px;
+			 
+			
+		}
+		#new-text{
+			font-size:18px;
+			padding-left:0px;
+			text-align:left;
+		}
+		
+		#cinema{
+			font-size:15px;
+			text-align:center;
+			padding: 3% 3% 3% 3%;
+		}
+        #tit {
+            <!-- margin: 0 30% 0 30%; -->
+            font-size: 30px;
+            /*text-align:center;*/
+            color: #0000ff;
+            margin-left: 10%;
+        }
+		#co{
+		
+		font-size:20px;
+		}
+		#ti{
+		margin:0px auto;
+		padding-left:30px;
+		font-size:20px;
+		width:90%;
+		}
+		#t{
+		width:100%;
+		margin-bottom:0;
+		padding-bottom:0;
+		<!--border:1px solid #ff0000;-->
+		
+		}
+    </style>
+</head>
+<body>
+    <div id="all">
+        <div id="top">
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Enjoy My Movie life</a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search" style="width:12em; display:inline-block;">
+                                <button type="submit" class="btn btn-default">
+                                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                        </form>
+						
+                            <ul class="nav navbar-nav navbar-right" style=";">
+							<li><a href="home.html">HOME</a></li>
+                            <li><a href="informationmove.html">排行榜</a></li>
+                            <li><a href="ttt.php">類別</a></li>
+							<li><a href="moveinformation.html">電影情報站</a></li>
+<li><a href="sign.html"><i class="fa fa-sign-out fa-1x" aria-hidden="true"></i> 登出</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-user fa-1x" aria-hidden="true"></i> 使用者 <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="information.html"><i class="fa fa-cog fa-1x" aria-hidden="true"></i> 基本資料</a></li>
+                                    <li><a href="mylove.php"><i class="fa fa-heart fa-1x" aria-hidden="true"></i> 我的最愛</a></li>
+                                    <li><a href="history.php"><i class="fa fa-paw fa-1x" aria-hidden="true"></i> 歷史紀錄</a></li>
+									<li><a href="later.php"><i class="fa fa-clock-o fa-1x" aria-hidden="true"></i> 稍後觀看</a></li>
+									<li><a href="inform.php"><i class="fa fa-envelope fa-1x" aria-hidden="true"></i> 通知</a></li>
+									
+									<!--<li class="divider"></li>-->
+                                </ul>
+							</li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </div>
+        </div>
+          <div id = "main_content">
+			
+			<div id = "information_text" style="color:#FB8C00; margin-left:5%">
+				電影情報站
+			</div>
+			<hr>
+			<div id = "movienew_text" >
+				<a href="filmreview.html" style="color:#4A148C;"><i class="fa fa-star-half-o fa-fw" aria-hidden="true" ></i>影評專區</a>
+				
+			</div>
+			<br/>
+			
+			<div id ="movienew">
+				
+				<div id ="new_text">
+				《崩壞人生：Demolition》影評：劇痛後的麻木，崩壞後的坦然
+				</div>
+				
+				
+				<div id ="new-text">
+					《崩壞人生：Demolition》敘述在金融業工作的Davis，在一次車禍意外失去妻子後，尋求
+					解放自己於於心靈痛苦的旅途，細膩描述從經歷創傷時的麻木，宣洩情緒後的空虛，以及
+					最後坦然面對悲傷的過程。看電影的當下其實很難理解主角行為的依據，因為從一開始
+					Davis的情緒表現就相當壓抑，直到電影後段線索慢慢拼湊完整，才能理解主角的心境轉變
+					，後勁十足。</br>
+					以下將分享我在電影中觀察到的細節，牽涉劇情討論，歡迎看完的觀眾朋友一同留言補充：）</br>
+					1.和飲料機公司的對話</br>
+					<div id ="new_img">
+						<img src="http://www.blackcoffeeseries.com/wp-content/uploads/2016/05/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7-2016-05-22-%E4%B8%8B%E5%8D%882.14.16.png"/>
+					
+					</div>
+				</div>
+				<div id ="new-text">
+					
+					車禍發生後，Davis第一個傾訴的對象居然是飲料機公司的客服人員，而不是自己的親人朋友
+					，看似詭異的行為隱藏著他的兩種狀態。其一是Davis現在的生活中十分孤獨，在電影後面的
+					發展中可以看到他幾乎是自己一個人生活，交心的朋友是遠在他方受到他文字感動的客服人
+					員，而不是任何平常生活中會遇見的人。</br>
+					寫信向陌生人訴苦的表現也可以視為太過痛苦而想讓自己麻木的方式，Davis試著用冷漠旁觀
+					者的語調去敘述自己妻子的意外，並且舉了很多例子說明這段婚姻其實沒那麼美滿，所以他
+					自己其實也沒有這麼難過。在火車上與洋基打雜大叔的對話就是如此，他想找人說明自己不那
+					麼愛妻子，對喪妻這件事毫無感覺，其實只是想透過「說出來」說服自己悲痛的內心沒有那麼
+					痛，一種極限苦楚下的自欺欺人方式。</br>
+					2.拆除內心的具象化表現：拆除生活中的一切</br>
+					<div id ="new_img">
+						<img src="http://www.blackcoffeeseries.com/wp-content/uploads/2016/05/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7-2016-05-22-%E4%B8%8B%E5%8D%882.15.34.png" />
+					
+					</div>
+				</div>
+				<div id ="new-text">
+					「拆除」這個行為在電影中算是最直白的隱喻了，電影開頭Davis在寫信時，振筆疾書的狀態下
+					唸了一句：「生活中的一切都像是隱喻…」，緊接著開始了瘋狂拆解物品的旅程。小從咖啡機，
+					大到拆除房子，他就是想要拆光生活中層層包裝的物件，去發掘事務運作的原理，為什麼自己
+					的生活會是現在這個樣子？為什麼他好像對於身邊的事情漫不經心？直到最後Davis才看清自己
+					的自我防衛機制，發現自己其實還愛著妻子，只是不敢面對婚姻失敗而層層武裝自己。仔細看的
+					話還會發現，Davis在拆除的牆上寫了Karen的名字，下一幕就直接殺去她家找她談心。</br>
+					3.客服Karen象徵著理解自己難處的陪伴</br>
+					<div id = "new_img">
+						<img src="http://www.blackcoffeeseries.com/wp-content/uploads/2016/05/20160316-jake-gyllenhaal-naomi-watts-demolition-photos-10072014-14.jpg" />
+					
+					</div>
+				</div>
+				<div id ="new-text">
+					Karen接到Davis的信之後就與他有所共鳴，甚至是希望可以認識這個人而跟蹤他，最後兩人發展出相
+					知相惜的友誼，互相陪伴度過喪失另一半的痛苦。Karen有一幕在孩子Chris的房間中回憶自己的丈夫
+					與小兒子，電影沒有詳述Karen親人的情形，但這一切就說得通他與Davis的共鳴，以及其實沒有那麼
+					愛男友，男友Carl只是她尋求陪伴的一種方式，因此Carl的真愛對她來說太沈重。</br>
+					Davis對Karen的回答令人難過，與他暈倒看醫生時的夢境相符，他指著自己的全身說，我這裡已經麻
+					木十幾年了，自從他領悟「長大」這件事以後便一直活在世界的規範之下，漸漸地不敢用真正的情感
+					面對事物，於是所做的一切都是因為「合理」、「有效」、「容易達成」為基準，而不是因為自己真
+					的想做。</br>
+					4.主題曲經典老歌：Heart-Crazy On You</br>
+					Davis聽著這首輕快的歌曲開車並在路上快意走著，但其實歌詞的內容相當悲傷，就跟Davis瘋狂外在
+					的表現與真實的內在呈現的反差一樣，節錄這首歌開頭的歌詞如下：</br>
+					If we still have time, we might still get by （如果我們還有時間，我們可能還在一起）</br>
+					Every time I think about it, I want to cry </br>
+					With bombs and the devil, and the kids keep comin’</br>
+					No way to breathe easy, no time to be young （沒辦法自在地呼吸，沒有時間年輕）</br>
+					</br>
+					But I tell myself that I was doin’ all right （但我告訴自己我一切都好）</br>
+					There’s nothin’ left to do at night （在夜晚已經無事可做）</br>
+					But go crazy on you （只剩下為妳瘋狂）</br>
+					Crazy on you</br>
+					Let me go crazy, crazy on you, oh</br>
+					</br>
+					<div id ="new_img">
+						<img src="http://www.blackcoffeeseries.com/wp-content/uploads/2016/05/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7-2016-05-22-%E4%B8%8B%E5%8D%882.15.00.png" />
+					
+					</div>
+				</div>
+				<div id ="new-text">
+					5.孩子Chris象徵Davis的小時候，那個迷惘中不敢追求真正的自己</br>
+					與Karen的相處過程中，Davis也認識了她精靈古怪的兒子Chris，兩人在離經叛道的拆除冒險上建立起
+					了忘年之交，並透過Chris自我探索的過程，讓Davis憶起自己的過去與內心殘留的真實情感。Davis在
+					過去並沒有機會選擇自己真正想要的，於是他希望能幫助Chris追尋真正的自己，並看看更多其他的世界。</br>
+					6.生活中細小的點滴，無處不藏著曾經的美好</br>
+					Davis在許許多多的場景中回憶了妻子的片段，洗澡的時候彷彿看到她從身邊走過，在海灘奔跑時想起兩人
+					曾經彼此追逐，在旋轉木馬的絢麗裝飾下看到曾經歡樂的身影。這些美麗的回憶出現地短暫，沒頭沒尾一
+					閃即逝，就與我們真實的回憶反應一樣，有時候在人事已非之處，回憶莫名地襲來，那些微小卻深刻的片段
+					都是曾經深愛的證據。因為害怕美好回憶對比現今殘酷的痛苦，我們總會努力抑制那個衝動，讓回憶消失避
+					免自己陷入懷念的漩渦，Davis在電影中就是這樣不斷地壓抑自己直到最後。</br>
+					7.誠實面對自己情感，紀念亡故的妻子</br>
+					<div id ="new_img">
+						<img src="http://www.blackcoffeeseries.com/wp-content/uploads/2016/05/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7-2016-05-22-%E4%B8%8B%E5%8D%882.14.35.png" />
+					
+					</div>
+				</div>
+				<div id ="new-text">
+					Davis拜訪完妻子的墳墓後終於拆下自己的武裝，車裡的一張平凡留言紙條徹底擊潰了他，他忍不住開始痛哭
+					，再也不能假裝自己毫不在意這一切，於是見了岳父將妻子基金會的文件交回，並希望能夠再替妻子做一件
+					事紀念她。Davis把陳舊的旋轉木馬整修好，放在兩人曾經玩耍過的海灘上，讓附近的孩子歡笑填滿沒有情侶
+					的浪漫機器。在歡笑中Davis與岳父Phil放下了心結，最後一幕Davis看到比賽跑步的孩子們，也邁開步伐衝刺
+					要贏過他們，象徵他終於找回自己的「感覺」，重拾感受周遭事物的能力。</br>
+					總結來說，《崩壞人生：Demolition》適合目前正在經歷人生重大轉折的徬徨者觀賞，與主角Davis一同經歷
+					拆解重組後，找回自己的旅途！</br>
+					</br>
+					</br>
+					</br>
+				</div>
+				
+			</div>
+			
+</div>
+
+</body>
+</html>

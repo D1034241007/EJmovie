@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>電影情報站</title>
+	<script src="https://use.fontawesome.com/caa469a06e.js"></script>
+	<link rel="shortcut icon" href="http://imageshack.com/a/img924/8909/kRPNSE.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- 最新編譯和最佳化的 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <!-- 選擇性佈景主題 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <!-- 最新編譯和最佳化的 JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<style>
+		body{ 
+			margin:0; 
+			font-family:'微軟正黑體';
+		}
+		#information_text{
+			font-size:25pt;
+			padding-top:1%;
+			padding-left:1%;
+			text-align:left;
+		}
+		
+		#movienew_text {
+			padding-top:1%;
+			padding-left:3%;
+			padding-right:3%;
+			text-align:left;
+			font-size:20px;
+			margin-left:10%;
+			color:#6D4C41;
+			
+		}
+		.movienew{
+			width:70%;
+			/*border:1px solid #f00;*/
+			margin:1px auto;
+		}
+		.movienew div{
+			display:inline-block;
+			/*border: 1px solid ;*/
+			
+		}
+		
+		.new_img img{
+			display:block;
+			margin:0px auto;
+			width:50%;
+			min-width:250px;
+			text-align:center;
+		}
+		.new_text{
+			text-align:center;
+			margin:0px auto;
+			text-overflow:inherit;
+			min-width:250px;
+			width:50%;
+		}
+		#cinema{
+			text-align:center;
+			margin:0px auto;
+			//border: 1px solid ;
+			min-width:300px;
+			width:70%;
+		}
+		
+		#cinema div{
+			display:inline-block;
+		//	border: 1px solid ;
+			
+		}
+		
+		
+		
+		
+	</style>
+</head>
+<body>
+	<div id="all">
+		<div id="top">
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Enjoy My Movie life</a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search" style="width:12em; display:inline-block;">
+                                <button type="submit" class="btn btn-default">
+                                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                        </form>
+						
+                         <ul class="nav navbar-nav navbar-right" style=";">
+							<li><a href="home.html">HOME</a></li>
+                            <li><a href="informationmove.html">排行榜</a></li>
+                            <li><a href="ttt.php">類別</a></li>
+							<li><a href="moveinformation.html">電影情報站</a></li>
+<li><a href="sign.html"><i class="fa fa-sign-out fa-1x" aria-hidden="true"></i> 登出</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-user fa-1x" aria-hidden="true"></i> 使用者 <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="information.html"><i class="fa fa-cog fa-1x" aria-hidden="true"></i> 基本資料</a></li>
+                                    <li><a href="mylove.php"><i class="fa fa-heart fa-1x" aria-hidden="true"></i> 我的最愛</a></li>
+                                    <li><a href="history.php"><i class="fa fa-paw fa-1x" aria-hidden="true"></i> 歷史紀錄</a></li>
+									<li><a href="later.php"><i class="fa fa-clock-o fa-1x" aria-hidden="true"></i> 稍後觀看</a></li>
+									<li><a href="inform.php"><i class="fa fa-envelope fa-1x" aria-hidden="true"></i> 通知</a></li>
+									
+									<!--<li class="divider"></li>-->
+                                </ul>
+							</li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </div>
+		<div id = "main_content">
+			
+			<div id = "information_text" style="color:#FB8C00; margin-left:5%">
+				電影情報站
+			</div>
+			<hr>
+			<div id = "movienew_text" >
+				<a href="moveinformation_new.html"><i class="fa fa-newspaper-o fa-fw" aria-hidden="true" style="color:#6D4C41;"></i> 電影頭條</a>
+				
+			</div>
+			<br/>
+			
+			<div class = "cinema">
+				<div class = "new_img">
+				<a href="moveinformation_new1.html">
+				<img src="http://img.chinatimes.com/newsphoto/2016-08-01/656/20160801005815.jpg" >
+				</a>
+				</div>
+				<div class = "new_text">
+				<a href="moveinformation_new1.html">
+				23個詹姆斯麥艾維James McAvoy！驚悚片《分裂Split》精彩揭開多重人格心靈世界
+				</a>
+				</div>
+			</div>
+			<div class = "cinema">
+				<div class = "new_img">
+				<a href="moveinformation_new2.html">
+				<img src="http://img.chinatimes.com/newsphoto/2016-07-21/656/20160721005630.jpg" >
+				</a>
+				</div>
+				<div class = "new_text">
+				<a href="moveinformation_new2.html">
+				《比海還深》幸福是沒有犧牲，就得不到的東西
+				</a>
+				</div>
+			</div>
+			<hr>
+			<div id = "movienew_text" >
+				<i class="fa fa-map-marker fa-fw" aria-hidden="true" style="color:#6D4C41;"></i> 影城位置
+				
+			</div>
+			
+			<div id = "cinema" style="font-size:16px;">
+				<div id = "cinema_position"><a href="cinema_a.html" style="color:#311B92;"><img src="data:image/png;base64,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"
+				 width="200px" height="150px"></a>
+				</div>
+				<div id = "cinema_position"><a href="cinema_s.html" style="color:#311B92;"><img src="http://www.playpoint.com.tw/upload/-%E5%AF%A6%E9%AB%94%E5%BA%97/%E7%A7%80%E6%B3%B0.jpg"
+				 width="200px" height="150px"></a>
+				</div>
+				<div id = "cinema_position"><a href="cinema_v.html" style="color:#311B92;"><img src="http://lh4.ggpht.com/winsondes/SDD0HcpS3nI/AAAAAAAABJw/POvmyUjogFU/logo%5B3%5D.jpg?imgmax=800"
+				width="200px" height="150px"></a>
+				</div>	
+			</div>
+			<hr>
+			<div id = "movienew_text" >
+				<a href="filmreview.html"><i class="fa fa-star-half-o fa-fw" aria-hidden="true" style="color:#6D4C41;"></i> 影評專區</a>
+				
+			</div>
+			
+			
+			</br>
+				</br>
+			<div class = "cinema">
+				<div class = "new_img">
+				<a href="filmreview4.html">
+				<img src="http://i.imgur.com/vtXrH9p.png">
+				</a>
+				</div>
+				<div class = "new_text">
+				<a href="filmreview4.html">
+				《金錢怪獸：Money Monster》影評：人的性命值多少股價？
+				</a>
+				</div>
+			</div>
+			<div class ="cinema">
+				<div class = "new_img">
+				<a href="filmreview3.html">
+				<img src="http://www.blackcoffeeseries.com/wp-content/uploads/2016/05/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7-2016-05-22-%E4%B8%8B%E5%8D%882.14.16.png" >
+				</a>
+				</div>
+				<div class = "new_text">
+				<a href="filmreview3.html">
+				《崩壞人生：Demolition》影評：劇痛後的麻木，崩壞後的坦然
+				</a>
+				</div>
+				</br>
+				</br>
+				</br>
+				</br>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

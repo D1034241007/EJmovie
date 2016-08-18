@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>moveinformation_new</title>
+	<script src="https://use.fontawesome.com/caa469a06e.js"></script>
+	<link rel="shortcut icon" href="http://imageshack.com/a/img924/8909/kRPNSE.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- 最新編譯和最佳化的 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <!-- 選擇性佈景主題 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <!-- 最新編譯和最佳化的 JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <style>
+        body{
+		font-family:"微軟正黑體";
+            /*font-size:16px;*/
+        }
+        
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+		
+		
+		#movie_box{
+			font-size:20pt;
+			
+			padding-top:-3%;
+			padding-left:3%;
+			padding-right:3%;
+		}
+		#movie_box div{
+			display:inline-block;
+			<!--border: 1px solid ;-->
+		}
+		
+		#movie_button{
+			<!--padding-left:70%;-->
+			margin:0px auto;
+			min-width:300px;
+			font-size:18px;
+			
+					
+			
+		}
+		#movie_button a{
+			text-decoration:none;	
+			color:#666;
+		}
+		#movie_button a:hover{
+			color:#EEE;
+
+		}
+	
+		#information_text{
+			font-size:30pt;
+			padding-top:1%;
+			padding-left:1%;
+			text-align:left;
+		}
+			#movienew_text {
+			<!-- padding-top:1%;
+			padding-left:3%;
+			padding-right:3%; -->
+			text-align:left;
+			font-size:20px;
+			margin-left:10%;
+			color:#6D4C41;
+			
+		}
+		#movienew{
+			width:70%;
+			min-width:250px;
+			margin:0px auto;
+		}
+		
+		#new_img{
+			font-size:12px;
+			min-width:250px;
+		}
+		#new_img img{
+			display:block;
+			margin:0px auto;
+			width:50%;
+			min-width:230px;
+			
+		}
+		
+		#new_text{
+			font-size:25px;
+			padding-left:0px;
+			 
+			
+		}
+		#new-text{
+			font-size:18px;
+			padding-left:0px;
+			text-align:left;
+		}
+		
+		
+		#cinema{
+			font-size:15px;
+			text-align:center;
+			<!-- padding: 3% 3% 3% 3%; -->
+		}
+     
+    </style>
+</head>
+<body>
+    <div id="all">
+        <div id="top">
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Enjoy My Movie life</a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search" style="width:12em; display:inline-block;">
+                                <button type="submit" class="btn btn-default">
+                                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                        </form>
+						
+                       <ul class="nav navbar-nav navbar-right" style=";">
+							<li><a href="home.html">HOME</a></li>
+                            <li><a href="informationmove.html">排行榜</a></li>
+                            <li><a href="ttt.php">類別</a></li>
+							<li><a href="moveinformation.html">電影情報站</a></li>
+<li><a href="sign.html"><i class="fa fa-sign-out fa-1x" aria-hidden="true"></i> 登出</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-user fa-1x" aria-hidden="true"></i> 使用者 <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="information.html"><i class="fa fa-cog fa-1x" aria-hidden="true"></i> 基本資料</a></li>
+                                    <li><a href="mylove.php"><i class="fa fa-heart fa-1x" aria-hidden="true"></i> 我的最愛</a></li>
+                                    <li><a href="history.php"><i class="fa fa-paw fa-1x" aria-hidden="true"></i> 歷史紀錄</a></li>
+									<li><a href="later.php"><i class="fa fa-clock-o fa-1x" aria-hidden="true"></i> 稍後觀看</a></li>
+									<li><a href="inform.php"><i class="fa fa-envelope fa-1x" aria-hidden="true"></i> 通知</a></li>
+									
+									<!--<li class="divider"></li>-->
+                                </ul>
+							</li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </div>
+        </div>
+          <div id = "main_content">
+			<div id = "information_text" style="color:#FB8C00; margin-left:5%">
+				電影情報站
+			</div>
+			<hr>
+			<div id = "movienew_text" >
+				<a href="moveinformation_new.html"><i class="fa fa-newspaper-o fa-fw" aria-hidden="true" style="color:#6D4C41;"></i> 電影頭條</a>
+				
+			</div>
+			<br/>
+			
+			<div id ="movienew">
+				
+				<div id = "new_text">
+					誰是兇手？《哭聲》結局引爭論 導演卻說...
+				</div>
+				
+				<div id = "new_img">
+					<img src="http://img.ltn.com.tw/Upload/ent/page/800/2016/08/09/1790344_1.jpg" />
+					<p>《哭聲》導演羅泓軫透露，寫劇本時一度很苦惱要找誰演男主角，後來腦中便浮現郭度沅（右）的樣子。（車庫娛樂提供）</p>
+				</div>
+				<div id = new-text>
+				〔記者陳立妍／專訪〕南韓導演羅泓軫時隔6年推出新作《哭聲》，該片除入選坎城影展觀摩長片，
+				更勇奪「富川國際奇幻電影節」首獎與觀眾票選獎，開放式的結局也引發兩派網友辯論。羅泓軫說：
+				「結局應該交由觀眾來解讀，不能讓年齡、性別都不同的觀眾，用同個觀點來看我的電影。」</BR>
+				羅泓軫力求完美，花了2年8個月收集編劇材料，甚至走訪尼泊爾、日本等地，耗費2年寫劇本，期間更曾7度修改劇本，
+				勘景前期準備半年，半年磨拍攝，1年熬後製，細火慢燉出《哭聲》。由於全片8成為外景拍攝，甚至有許多場景需徒
+				步到達，加上片中採用自然光、雨景戲份多，種種因素都增加了拍攝難度，讓演員們紛紛大喊吃不消，就連飾演神秘
+				日本人的國村隼都坦言，《哭聲》是他從影以來最辛苦的一次拍攝。</BR>
+				羅泓軫透露：「有沒有辦法讓背景多元的觀眾們看電影時，感受到最大的滿足，是我最常思考的問題。拍部電影讓觀
+				眾看完結局以後，產生不同的感覺，也是我的願望。」因此，即使觀眾們對於《哭聲》的結局產生不同看法，喋喋不
+				休爭辯「兇手」是誰時，他仍維持一貫的信念，笑說：「《哭聲》的結尾必須維持《哭聲》的本質，所以才會出現各
+				式各樣的解讀，身為幕後的存在，我不能去說明電影，因為這就等同把電影說死了，那樣就太over了。」坦言對於
+				《哭聲》的結局，他本人感到十分滿意。羅泓軫也爆料，一開始寫劇本時，一度很苦惱要找誰來演男主角「鍾久」，
+				後來腦中一直浮現郭度沅的樣子，綜合郭度沅整個人的感覺，便認定他是最接近且最符合「鍾久」形象的演員。</BR>
+				《哭聲》描述在韓國山村的谷城（谷城與哭聲的韓語同音），村民一個個因不明原因死亡，眾人紛紛將禍源指向神秘
+				的日本人搞鬼下蠱，警察「鍾久」開始追查真相，沒想到他的女兒卻也開始出現異狀......《哭聲》將於12日在台上映。
+
+					
+				</div>
+			</div>
+			
+</div>
+
+</body>
+</html>

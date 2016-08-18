@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>即將&最新上映</title>
+
+    <meta name="viewport" http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" type="text/css" href="w3.css">
+    <!--  <link rel="stylesheet" href="http://www.w3schools.com/lib/w3.css"> -->
+    <script src="https://use.fontawesome.com/caa469a06e.js"></script>
+    <link rel="shortcut icon" href="http://imageshack.com/a/img924/8909/kRPNSE.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <style>
+        body{
+             font-family:'微軟正黑體';
+        }
+        .w3-row-padding{
+            margin:auto;
+        }
+        .w3-white{
+            font-family:'微軟正黑體';
+            font-size:20px;
+            bottom:0px;
+        }
+        img{
+            display:block;
+            /*border:1px solid #ff0000;*/
+            //height:22em;
+			width:45%;
+        }
+        p{
+            display:block;
+            margin:0.2em auto;
+            /*border:1px solid #ff0000;*/
+           
+        }
+        
+		#tit{
+		text-align:left;
+		font-size:30px;
+		color:#0000ff;
+		margin-left:10%;
+		}
+    
+	a:hover{color:inherit;}
+    iframe{
+		min-width:250px;
+		width:70%;
+		}
+		.dropdown-menu{
+		min-width:250px;
+		
+		}
+    </style>
+    <script>
+		function resetiframe(){
+			var iframe = document.getElementById("video");
+			var width = document.body.clientWidth*0.62;
+			var height = width/6*4;
+			iframe.style.width = width+"px";
+			iframe.style.height = height+"px";
+		}
+	</script>
+
+ <!--<script>
+                // Script to open and close sidenav
+                function w3_open() {
+                    document.getElementById("mySidenav").style.display = "block";
+                    document.getElementById("myOverlay").style.display = "block";
+                }
+
+                function w3_close() {
+                    document.getElementById("mySidenav").style.display = "none";
+                    document.getElementById("myOverlay").style.display = "none";
+                }
+            </script>-->
+   
+</head>
+<body onload="resetiframe()" onresize="resetiframe()">
+   <!-- <body class="w3-light-grey w3-content" style="max-width:2500px">-->
+
+        <!-- Overlay effect when opening sidenav on small screens -->
+        <div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+      
+
+        <!-- !PAGE CONTENT! -->
+        <!--<div class="w3-main" style="margin-left:30px">-->
+       <div id="top">
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Enjoy My Movie life</a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search" style="width:12em; display:inline-block;">
+                                <button type="submit" class="btn btn-default">
+                                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                        </form>
+						
+                        <ul class="nav navbar-nav navbar-right" style=";">
+							<li><a href="home.html">HOME</a></li>
+                            <li><a href="informationmove.html">排行榜</a></li>
+                            <li><a href="ttt.php">類別</a></li>
+							<li><a href="moveinformation.html">電影情報站</a></li>
+<li><a href="sign.html"><i class="fa fa-sign-out fa-1x" aria-hidden="true"></i> 登出</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-user fa-1x" aria-hidden="true"></i> 使用者 <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="information.html"><i class="fa fa-cog fa-1x" aria-hidden="true"></i> 基本資料</a></li>
+                                    <li><a href="mylove.php"><i class="fa fa-heart fa-1x" aria-hidden="true"></i> 我的最愛</a></li>
+                                    <li><a href="history.php"><i class="fa fa-paw fa-1x" aria-hidden="true"></i> 歷史紀錄</a></li>
+									<li><a href="later.php"><i class="fa fa-clock-o fa-1x" aria-hidden="true"></i> 稍後觀看</a></li>
+									<li><a href="inform.php"><i class="fa fa-envelope fa-1x" aria-hidden="true"></i> 通知</a></li>
+									
+									<!--<li class="divider"></li>-->
+                                </ul>
+							</li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </div>
+               
+                    <h2 style="font-weight:600; margin:1em 0 1em 1.5em;">即將上映</h2>
+        <hr style="border:0; height:1px; background-color:#d4d4d4;color:#d4d4d4	">
+          
+
+            <!-- Player -->
+            <div align="center">
+				<div id ="tit"> <a href="MyEggBoymovie.html">我的蛋男情人</a></div>
+				
+                <!-- <video style="width:65%; min-width:20em; " controls>-->
+				<div   align="center" >
+			<iframe id ="video" src="https://www.youtube.com/embed/sVeNXgJQBvQ" frameborder="0" allowfullscreen></iframe></div>
+			
+                   <!-- <source src="http://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    <source src="mov_bbb.ogg" type="video/ogg">
+                    Your browser does not support HTML5 video.-->
+                </video>
+                <hr style="border:0; height:1px; background-color:#d4d4d4;color:#d4d4d4	">
+            </div>
+        <h3 style="font-weight:600; margin:2em; ">相關影片</h3>
+
+
+            <!-- First Photo Grid-->
+            <div class="w3-row-padding" style="width:90%" align="center">
+                <div class="w3-fives w3-container w3-margin-bottom">
+                    <a href="MyEyemovie.html"><img src="http://1.blog.xuite.net/1/3/9/c/12196164/blog_56633/txt/65312011/10.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity"></a>
+                    <div class="w3-container w3-white">
+                        <p><b>那些年，我們一起追的女孩</b></p>
+                    </div>
+                </div>
+                <div class="w3-fives w3-container w3-margin-bottom">
+                    <a href="Julietsmovie.html"><img src="https://upload.wikimedia.org/wikipedia/zh/f/fe/%E8%8C%B1%E9%BA%97%E8%91%89.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity"></a>
+                    <div class="w3-container w3-white">
+                        <p><b>茱麗葉</b></p>
+                    </div>
+                </div>
+                <div class="w3-fives w3-container w3-margin-bottom">
+                    <a href="FirstLovemovie.html"><img src="http://iphoto.ipeen.com.tw/photo/comment/201011/cm20101119a8e7cd7b1fb4af5e47ee32fb7b219999460.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity"></a>
+                    <div class="w3-container w3-white">
+                        <p><b>初戀風暴</b></p>
+                    </div>
+                </div>
+                <div class="w3-fives w3-container w3-margin-bottom">
+                    <a href="ThisSummerFeelingmovie.html"><img src="http://www.maisonmotion.com/wp-content/uploads/2016/07/%E5%A4%8F%E6%97%A5%E6%83%85%E4%BA%8B_%E4%B8%AD%E6%96%87%E6%B5%B7%E5%A0%B1-resized.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity"></a>
+                    <div class="w3-container w3-white">
+                        <p><b>夏日情事</b></p>
+                    </div>
+                </div>
+                <div class="w3-fives w3-container">
+                    <a href="Coffee.html"><img src="http://www.photowant.com/photo101/fwen64513674/pl_fwen64513674_0003.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity"></a>
+                    <div class="w3-container w3-white">
+                        <p><b>咖啡‧愛情</b></p>
+                    </div>
+                </div>
+            </div>
+
+     
+        <h3 style="font-weight:600; margin:2em; ">最新上映</h3>
+                <!-- First Photo Grid-->
+                <div class="w3-row-padding" style="width:90%" align="center">
+                    <div class="w3-fives w3-container w3-margin-bottom">
+                        <a href="TheBFGmovie.html"><img src="https://upload.wikimedia.org/wikipedia/zh/3/3c/The_BFG_2016_Poster.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity"></a>
+                        <div class="w3-container w3-white">
+                            <p><b>吹夢巨人</b></p>
+                        </div>
+                    </div>
+                    <div class="w3-fives w3-container w3-margin-bottom">
+                        <a href="IMOFFTHENmovie.html"><img src="http://www.gs8.com.tw/image/Movie/Movie/20160125020/5661.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity"></a>
+                        <div class="w3-container w3-white">
+                            <p><b>我出去一下</b></p>
+                        </div>
+                    </div>
+                    <div class="w3-fives w3-container w3-margin-bottom">
+                        <a href="Resurrectionmovie.html"><img src="http://www.photowant.com/photo101/fmen43522806/pl_fmen43522806_0004.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity"></a>
+                        <div class="w3-container w3-white">
+                            <p><b>極速秒殺2</b></p>
+                        </div>
+                    </div>
+                    <div class="w3-fives w3-container w3-margin-bottom">
+                        <a href="BenHurmovie.html"><img src="http://images2.gamme.com.tw/news2/2015/97/69/p56ZoKCbl5_Y.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity"></a>
+                        <div class="w3-container w3-white">
+                            <p><b>賓漢</b></p>
+                        </div>
+                    </div>
+                    <div class="w3-fives w3-container">
+                        <a href="margan.html"><img src="https://images2.gamme.com.tw/news2/2016/05/00/q52Yn6WVj6eXrg.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity"></a>
+                        <div class="w3-container w3-white">
+                            <p><b>魔詭</b></p>
+                        </div>
+                    </div>
+                </div>
+
+
+                <p><p />
+                <!-- Pagination -->
+
+
+                <!-- End page content -->
+            </div>
+
+           
+
+    
+     
+    </body>
+</html>
+
+

@@ -1,0 +1,311 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>moveinformation_new</title>
+	<script src="https://use.fontawesome.com/caa469a06e.js"></script>
+	<link rel="shortcut icon" href="http://imageshack.com/a/img924/8909/kRPNSE.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- 最新編譯和最佳化的 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <!-- 選擇性佈景主題 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <!-- 最新編譯和最佳化的 JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <style>
+        body{
+		font-family:"微軟正黑體";
+            /*font-size:16px;*/
+        }
+        #mid {
+            /*border:1px solid #ff0000;*/
+            display: block;
+            margin: 7.5em auto;
+            width: 21.5em;
+            height: 20em;
+        }
+
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+		
+		#movie_box{
+			font-size:20pt;
+			
+			padding-top:-3%;
+			padding-left:3%;
+			padding-right:3%;
+		}
+		#movie_box div{
+			display:inline-block;
+			<!--border: 1px solid ;-->
+		}
+		
+		#movie_button{
+			<!--padding-left:70%;-->
+			margin-left:70%;
+			min-width:300px;
+			font-size:18px;
+			
+					
+			
+		}
+		#movie_button a{
+			text-decoration:none;	
+			color:#666;
+		}
+		#movie_button a:hover{
+			color:#EEE;
+
+		}
+			#film_box{
+			padding:1% 10% 1% 10%;
+		}
+		#film{
+			text-align:center;
+			padding:13% 1% 13% 1%;
+			/*border: 1px solid ;*/
+		}
+		#film_data{
+			/*text-align:center;*/
+			padding:5% 1% 15% 1%;
+			/*border: 1px solid ;*/
+			font-size:28px;
+		}
+		#information_text{
+			font-size:25pt;
+			padding-top:1%;
+			padding-left:1%;
+			text-align:left;
+		}
+		#movienew_text {
+			<!-- padding-top:1%;
+			padding-left:3%;
+			padding-right:3%; -->
+			text-align:left;
+			font-size:20px;
+			margin-left:10%;
+			color:#6D4C41;
+			
+		}
+		
+		#movienew{
+			width:70%;
+			min-width:250px;
+			margin:0px auto;
+		}
+		.#new_img{
+			font-size:12px;
+			min-width:250px;
+		}
+		#new_img img{
+			display:block;
+			margin:0px auto;
+			width:50%;
+			min-width:230px;
+			
+		}
+		
+		#new_text{
+			font-size:25px;
+			padding-left:0px;
+			 
+			
+		}
+		#new-text{
+			font-size:18px;
+			padding-left:0px;
+			text-align:left;
+		}
+		
+		#cinema{
+			font-size:15px;
+			text-align:center;
+			padding: 3% 3% 3% 3%;
+		}
+        
+		
+    </style>
+</head>
+<body>
+    <div id="all">
+        <div id="top">
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Enjoy My Movie life</a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search" style="width:12em; display:inline-block;">
+                                <button type="submit" class="btn btn-default">
+                                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                        </form>
+						
+                        <ul class="nav navbar-nav navbar-right" style=";">
+							<li><a href="home.html">HOME</a></li>
+                            <li><a href="informationmove.html">排行榜</a></li>
+                            <li><a href="ttt.php">類別</a></li>
+							<li><a href="moveinformation.html">電影情報站</a></li>
+<li><a href="sign.html"><i class="fa fa-sign-out fa-1x" aria-hidden="true"></i> 登出</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-user fa-1x" aria-hidden="true"></i> 使用者 <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="information.html"><i class="fa fa-cog fa-1x" aria-hidden="true"></i> 基本資料</a></li>
+                                    <li><a href="mylove.php"><i class="fa fa-heart fa-1x" aria-hidden="true"></i> 我的最愛</a></li>
+                                    <li><a href="history.php"><i class="fa fa-paw fa-1x" aria-hidden="true"></i> 歷史紀錄</a></li>
+									<li><a href="later.php"><i class="fa fa-clock-o fa-1x" aria-hidden="true"></i> 稍後觀看</a></li>
+									<li><a href="inform.php"><i class="fa fa-envelope fa-1x" aria-hidden="true"></i> 通知</a></li>
+									
+									<!--<li class="divider"></li>-->
+                                </ul>
+							</li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </div>
+        </div>
+          <div id = "main_content">
+			<div id = "information_text" style="color:#FB8C00; margin-left:5%">
+				電影情報站
+			</div>
+			<hr>
+			<div id = "movienew_text" >
+				<a href="filmreview.html" style="color:#4A148C;"><i class="fa fa-star-half-o fa-fw" aria-hidden="true" ></i>影評專區</a>
+				
+			</div>
+			<br/>
+			<!--<div id ="information_text">
+			<a href="moveinformation.html">
+				電影情報站
+			</div>
+			
+			<div id ="movienew_text">
+				<a href="filmreview.html">
+					影評專區
+				</a>
+				
+				<hr>
+			</div>-->
+			
+			<div id ="movienew">
+				
+				<div id ="new_text">
+					《金錢怪獸：Money Monster》影評：人的性命值多少股價？</br>
+				</div>
+				
+				
+				<div id ="new-text">
+					《金錢怪獸：Money Monster》是一部諷刺當代華爾街如何透過高科技交易包裝金融詐欺的劇
+					情電影，結合了電視直撥，演算法高頻交易，自殺炸彈客等要素，羅織成一部淺顯易懂的現
+					代寓言，總在觀眾以為將會老套發展的轉折點上，投下出乎意料的震撼彈，以更有創意的方
+					式敘事。</br>
+					喬治克隆尼飾演的華爾街國師Lee Gates是金融節目「Money Monster」的電視名人，專門推薦
+					各種熱門的金融產品給觀眾，搞笑有趣的節目效果感染力十足，許多平民百姓聽從他的建議
+					投資。當眾人如同往常地演出誇張橋段講解股市時，一名像是快遞人員的男子Kyle衝進攝影棚
+					，他在所有人以為這是新創搞笑梗的瞬間掏出手槍，對空擊發並挾持Gates：「我今天來到這裡
+					是因為我有話要說！雖然我是拿著槍的人，但他們才是真正的邪惡之人！」</br>
+					茱莉亞羅勃茲飾演的導播Patty不敢大意，遵從Kyle的指示繼續電視直播，讓全國數千萬的觀
+					眾聽完Kyle對高頻交易金融公司的指控，因為前陣子這間公司僅用「電腦出錯」這個原因掩蓋
+					損失八億美元的錯誤，而Kyle畢生的積蓄投資在瞬間化為烏有。Kyle是個時薪14美元的貨車司
+					機，沒有特殊的背景與技能，僅僅是一個在紐約的殘酷叢林中求生的平凡人，他看著自己即將
+					出生的兒子以及房子的貸款，決定用母親留下的遺產放手一搏，將希望寄託在Gates推薦的最穩
+					賺不賠的產品上，期望能夠一夕致富，追求更美好的生活。</br>
+					<div id ="new_img">
+						<img src="http://i.imgur.com/vtXrH9p.png" />
+					
+					</div>
+				</div>
+				<div id ="new-text">
+					
+					Kyle象徵著對複雜金融產品一無所知的一般階級，在載浮載沈的艱困生活中，抓住像是Gates
+					這樣的人投射的美好幻夢，夢碎之時金錢所劃分出的階級對立爆發，讓他用最直接火爆的方式
+					，訴諸自己的憤怒並要求真相。Gates原本僅僅是為了在槍口下生存，而不斷地與Kyle溝通，希
+					望能找到方式補償受害者，但隨著各方資訊不斷地整合，他漸漸地發現這虧損事件並非單純的
+					「電腦意外」，而是人為操作的陰謀。</br>
+					與Gates合作無間的導播Patty與製作人Ron，在攝影棚被挾持時，一面在外奔波收集事件線索，
+					場景在攝影前臺後臺與外景三處移動，以獨特的手法呈現分秒必爭的緊急情況，加上警方獨立強
+					硬的攻堅行動，讓整個事件更加刺激驚險。令人印象深刻的是，在緊張的氛圍中，劇情仍可以時
+					不時地出現合宜的幽默笑點緩衝，讓每一位角色的性格都更獨立鮮明，甚至讓職掌直播鏡頭的攝
+					影師也成了不可或缺的劇情配角。</br>
+					《金錢怪獸：Money Monster》最震撼深入人心的兩幕是，Lee Gates錦囊妙計的失敗與觀眾對於整
+					起事件尾聲的反應。當Gates知道Kyle的本意是希望高頻交易公司認錯，還給所有投資人一個公道
+					後，他想出了一個三贏的辦法：只要所有電視機與電腦前的千萬觀眾，投資一點點金額到金融公
+					司的股票中，瞬間的大量買入就能提高股價，並矇騙電腦演算法，讓其他投資公司的電腦認為這
+					是值得關注的趨勢。當所有人都購買了一點份額時，較高的需求創造了價值，金融公司股價就會
+					回升，讓Kyle能夠順勢拿回原本屬於自己的財產，也讓所有觀眾分了一杯羹。</br>
+					<div id ="new_img">
+						<img src="http://i.imgur.com/jbqdAzM.png" />
+					
+					</div>
+				</div>
+				<div id ="new-text">
+					這個看似完美的計畫，卻在Lee Gates向觀眾喊話之後跌回了比原先更低的股價，Gates柔情地向
+					觀眾訴諸人性：「所有人都該互相幫助，我的命在你們手上值多少錢呢？只要願意付出一點，就可
+					以拯救我，也拯救Kyle。」觀眾最後用行動證明了，他們不再信任Gates，他們早已受夠華爾街一再
+					的欺騙，如今他們只想看到始作俑者受到應有的懲罰。這對Gates來說無疑是一大打擊，曾經在股市
+					上呼風喚雨喊水結凍的自己，居然無法在緊要關頭說服觀眾付出極小的代價換取自己的性命，此時
+					此刻他因為觀眾擁護才擁有的價值，蕩然無存。喬治克隆尼角色的內心打擊繼續演下去也會是一個
+					有趣的發展，但就會偏離原先挖掘陰謀的主要劇情，於是電影沒有在這個角色內心的掙扎與覺醒多
+					做描述，電影最後看起來他甚至是沒有改變什麼想法，依然要繼續主持金融談話節目。</br>
+					社會上的非事件當事人在看待整個挾持行動時，冷漠無感的態度反應了現代社會個人主義至上的情
+					形，儘管世界上充滿了不公義，但當他們與自己無干時，就不會有太多動力出手援助。Kyle挾持
+					Gates到街上後，有一幕轉播鏡頭切到了另一個談話性節目的場景中，一位紅色衣服的脫口秀主持人
+					大聲嚷嚷著：「以後只要我不爽，我也可以到電視台挾持然後拿個幾萬美金走～」戲謔的方式絲毫
+					沒有把高頻金融交易風險的重要議題看在眼裡，沒有思考整個事件背後的成因。這個主持大媽看似荒
+					謬的行為，實際上卻是社會中多數人會下意識呈現的反智表現：「不思考事情的脈絡，只看事情的結果。」</br>
+					<div id = "new_img">
+						<img src="http://i.imgur.com/b1ZG6C9.png" />
+					
+					</div>
+				</div>
+				<div id ="new-text">
+					最後一幕中，Kyle完成了他的目標，他此生亦無可留戀之處，鬆開了引爆器的按鈕換來一顆直衝心門
+					的子彈，深臥血泊結束了短暫而震撼的哀鳴。鏡頭轉向所有在咖啡廳，酒吧，街上圍觀直播的人群，
+					所有人盯著螢幕不發一語，靜置五秒後，恢復原來的生活，彷彿剛剛以死明志的控訴不曾存在一般。
+					這幕著實令人感嘆，確實我們每個人都必須為了自己的生活奮鬥，越是努力便越沒辦法顧及他人，當媒
+					體中的彼端呈現了我們所不能體會的痛苦景況時，除了當下受到情緒的影響以外，事件結束後真的會
+					因此改變自己什麼嗎？</br>
+					連主角們最終也沒有對於這個相關事件多做著墨，我想這可能是這部電影在IMDB上只有6.7分的原因，
+					帶出了值得深思的議題且用引人入勝的手法包裝，最後卻沒有辦法回到主題，做更深入的討論。另外一
+					些關鍵點上為了方便用了較粗糙的手法帶過，也是比較可惜之處，例如金融公司公關長的立場轉變，以
+					及最後反派CEO的答辯內容，都是可以更加精緻地處理才對。</br>
+					這是Jodie Foster（茱蒂佛斯特）從幕前走到幕後執導筒後，第一部純導演的劇情長片，在此之前的電
+					影為2011年自導自演的《The Beaver》，而她更也在Netflix執導過《House of Cards：紙牌屋》第二季第
+					九集”Chapter22″，與兩集《Orange Is the New Black：女子監獄》，可見近年的執導功力越來越純熟。</br>
+					總結來說，《金錢怪獸：Money Monster》依然是一部值得一看的金融題材電影，電影中的術語都淺顯易懂
+					，加上兩位影帝影后級的演技詮釋，過程流暢而引人深思，可以作為目前超級英雄電影轟炸下的冷靜替
+					代選擇，去了解媒體，金融與科技之間的關係。</br>
+					<div id ="new_img">
+						<img src="http://www.blackcoffeeseries.com/wp-content/uploads/2016/05/%E8%9E%A2%E5%B9%95%E5%BF%AB%E7%85%A7-2016-05-22-%E4%B8%8B%E5%8D%882.15.00.png" />
+					
+					</div>
+				</div>
+				<div id ="new-text">
+					總結來說，《金錢怪獸：Money Monster》依然是一部值得一看的金融題材電影，電影中的術語都淺顯易懂
+					，加上兩位影帝影后級的演技詮釋，過程流暢而引人深思，可以作為目前超級英雄電影轟炸下的冷靜替
+					代選擇，去了解媒體，金融與科技之間的關係。
+				</div>
+				
+			</div>
+			
+</div>
+
+</body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>電影資訊</title>
+	<script src="https://use.fontawesome.com/caa469a06e.js"></script>
+	<link rel="shortcut icon" href="http://imageshack.com/a/img924/8909/kRPNSE.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- 最新編譯和最佳化的 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <!-- 選擇性佈景主題 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <!-- 最新編譯和最佳化的 JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+    <style>
+        body{ 
+			margin:0; 
+			font-size:12pt;
+			font-family:'微軟正黑體';
+		}
+       #all{
+			width: 100%;
+			
+		}
+		#film_box{
+			//padding:1% 10% 1% 10%;
+			width:90%;
+			min-width:200px;
+			margin:0px auto;
+			font-size:12px;
+		}
+		#film{
+			text-align:center;
+			padding:13% 1% 13% 1%;
+			/*border: 1px solid ;*/
+		}
+		#film_data{
+			//  border:1px solid #ff0000;
+			//padding:5% 1% 15% 1%;
+			 margin: 0px auto;
+            width:70%;
+			
+		
+		}
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+		#movie_box div{
+			display:inline-block;
+			<!--border: 1px solid ;-->
+		}
+		
+		#movie_button{
+			<!--padding-left:70%;-->
+			margin:0px auto;
+			min-width:300px;
+			font-size:16px;
+			text-align:center;
+					
+			
+		}
+		#movie_button a{
+			text-decoration:none;	
+			color:#666;
+		}
+		#movie_button a:hover{
+			color:#EEE;
+
+		}
+		
+		
+		#tit{
+		
+		<!--margin:0 30% 0 30%;-->
+		
+		//text-align:center;
+		color:#0000ff;
+		margin-left:10%;
+		
+		}
+		#co{
+		
+		font-size:20px;
+		}
+		#ti{
+		margin:0px auto;
+	//	padding-left:30px;
+		font-size:15px;
+		//width:90%;
+		}
+		#t{
+		width:100%;
+		margin-bottom:0;
+		padding-bottom:0;
+		<!--border:1px solid #ff0000;-->
+		
+		}
+    iframe{
+		min-width:250px;
+		width:70%;
+		}
+		.dropdown-menu{
+		min-width:250px;
+		
+		}
+    </style>
+    <script>
+		function resetiframe(){
+			var iframe = document.getElementById("video");
+			var width = document.body.clientWidth*0.62;
+			var height = width/4*3;
+			iframe.style.width = width+"px";
+			iframe.style.height = height+"px";
+		}
+	</script>
+</head>
+<body onload="resetiframe()" onresize="resetiframe()">
+    <div id="all">
+        <div id="top">
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Enjoy My Movie life</a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search" style="width:12em; display:inline-block;">
+                                <button type="submit" class="btn btn-default">
+                                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                        </form>
+						
+                        <ul class="nav navbar-nav navbar-right" style=";">
+							<li><a href="home.html">HOME</a></li>
+                            <li><a href="informationmove.html">排行榜</a></li>
+                            <li><a href="ttt.php">類別</a></li>
+							<li><a href="moveinformation.html">電影情報站</a></li>
+<li><a href="sign.html"><i class="fa fa-sign-out fa-1x" aria-hidden="true"></i> 登出</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-user fa-1x" aria-hidden="true"></i> 使用者 <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="information.html"><i class="fa fa-cog fa-1x" aria-hidden="true"></i> 基本資料</a></li>
+                                    <li><a href="mylove.php"><i class="fa fa-heart fa-1x" aria-hidden="true"></i> 我的最愛</a></li>
+                                    <li><a href="history.php"><i class="fa fa-paw fa-1x" aria-hidden="true"></i> 歷史紀錄</a></li>
+									<li><a href="later.php"><i class="fa fa-clock-o fa-1x" aria-hidden="true"></i> 稍後觀看</a></li>
+									<li><a href="inform.php"><i class="fa fa-envelope fa-1x" aria-hidden="true"></i> 通知</a></li>
+									
+									<!--<li class="divider"></li>-->
+                                </ul>
+							</li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </div>
+        </div>
+<div id = "main_content">
+			
+			<!-- style="border:1px solid #eee;"-->
+				<div id="tit" style="font-size:30px;"><img src="http://imageshack.com/a/img924/8909/kRPNSE.png" width="80">我出去一下</div>
+				<div id ="movie_button" >
+			<i class="fa fa-clock-o fa-fw" aria-hidden="true" style="color:#212121;"></i><input style="background-color:transparent; border:0;" type="button" value="稍候觀看"onclick="var reply = confirm('確定加入 ?'); ">
+			<i class="fa fa-heart fa-fw" aria-hidden="true" style="color:#212121;"></i><input style="background-color:transparent; border:0;" type="button" value="我的最愛"onclick="var reply = confirm('確定加入 ?'); ">
+			<i class="fa fa-envelope fa-fw" aria-hidden="true" style="color:#212121;"></i><input style="background-color:transparent; border:0;" type="button" value="通知"onclick="var reply = confirm('確定加入 ?'); ">
+				</div>
+				</div>
+			<hr>
+			<div id ="film_box">
+		<div   align="center" >
+			<iframe id ="video" src="https://www.youtube.com/embed/wrjf0_D0D8I" frameborder="0" allowfullscreen></iframe></div>
+				<div id="film_data">
+				<div id ="ti">
+				<ul>
+                    <li>片名:我出去一下&lang;IM OFF THEN;</li>
+					<li>類別:劇情</li> 
+                    <li>導演:尤莉亞馮海茲</li>                
+					<li>主演:大衛史崔索、瑪蒂娜吉黛克、卡羅莉妮舒赫、安奈特弗埃爾</li>
+					<li>上映日期:2016-08-12</li>	
+                 </ul>
+				 <span>簡介:</span>
+					<span>哈沛是個知名的喜劇演員和主持人，也是忙碌的現代人。他不愛運動、自詡「沙發上的馬鈴薯」，
+					最愛窩在電視機前狂吃洋芋片，大啖乳酪蛋糕。長期繁忙的工作，讓他忽略了內心的聲音：「該休息了！」，
+					終於遭致身體的報復：起初發生聽覺障礙、又因為心肌梗塞緊急送醫，最後竟切除了膽囊…。 這場生命危機終於改變哈沛的想法，
+					過勞、過重、過累的他，決定放自己半年的假。他低調地跟好友們說了句「我出去一下！」，便踏上這趟朝聖之旅，探索真正的自己。
+					路上遇到各形各色的人，艱辛旅程也時刻考驗著他的體力、耐力與意志力…。哈沛真能獨自完成這趟800公里的徒步之旅嗎？他和史黛拉、蕾娜三人又還會再相遇嗎？
+					一趟有奇遇、有痛苦、有驚險也有歡樂的旅程，就此展開…。</span>
+				 </div>
+				</div>
+				</div>
+</div>
+
+</body>
+</html>

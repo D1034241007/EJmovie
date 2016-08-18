@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>moveinformation_new</title>
+	<script src="https://use.fontawesome.com/caa469a06e.js"></script>
+	<link rel="shortcut icon" href="http://imageshack.com/a/img924/8909/kRPNSE.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- 最新編譯和最佳化的 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <!-- 選擇性佈景主題 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <!-- 最新編譯和最佳化的 JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+   <style>
+        body{
+		font-family:"微軟正黑體";
+            /*font-size:16px;*/
+        }
+        
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+		
+		
+		#movie_box{
+			font-size:20pt;
+			
+			padding-top:-3%;
+			padding-left:3%;
+			padding-right:3%;
+		}
+		#movie_box div{
+			display:inline-block;
+			<!--border: 1px solid ;-->
+		}
+		
+		#movie_button{
+			<!--padding-left:70%;-->
+			margin:0px auto;
+			min-width:300px;
+			font-size:18px;
+			
+					
+			
+		}
+		#movie_button a{
+			text-decoration:none;	
+			color:#666;
+		}
+		#movie_button a:hover{
+			color:#EEE;
+
+		}
+	
+		#information_text{
+			font-size:30pt;
+			padding-top:1%;
+			padding-left:1%;
+			text-align:left;
+		}
+			#movienew_text {
+			<!-- padding-top:1%;
+			padding-left:3%;
+			padding-right:3%; -->
+			text-align:left;
+			font-size:20px;
+			margin-left:10%;
+			color:#6D4C41;
+			
+		}
+		#movienew{
+			width:70%;
+			min-width:250px;
+			margin:0px auto;
+		}
+		
+		#new_img{
+			font-size:12px;
+			min-width:250px;
+		}
+		#new_img img{
+			display:block;
+			margin:0px auto;
+			width:50%;
+			min-width:230px;
+			
+		}
+		
+		#new_text{
+			font-size:25px;
+			padding-left:0px;
+			 
+			
+		}
+		#new-text{
+			font-size:18px;
+			padding-left:0px;
+			text-align:left;
+		}
+		
+		
+		#cinema{
+			font-size:15px;
+			text-align:center;
+			<!-- padding: 3% 3% 3% 3%; -->
+		}
+     
+    </style>
+</head>
+<body>
+    <div id="all">
+        <div id="top">
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Enjoy My Movie life</a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search" style="width:12em; display:inline-block;">
+                                <button type="submit" class="btn btn-default">
+                                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                        </form>
+						
+                          <ul class="nav navbar-nav navbar-right" style=";">
+							<li><a href="home.html">HOME</a></li>
+                            <li><a href="informationmove.html">排行榜</a></li>
+                            <li><a href="ttt.php">類別</a></li>
+							<li><a href="moveinformation.html">電影情報站</a></li>
+<li><a href="sign.html"><i class="fa fa-sign-out fa-1x" aria-hidden="true"></i> 登出</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-user fa-1x" aria-hidden="true"></i> 使用者 <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="information.html"><i class="fa fa-cog fa-1x" aria-hidden="true"></i> 基本資料</a></li>
+                                    <li><a href="mylove.php"><i class="fa fa-heart fa-1x" aria-hidden="true"></i> 我的最愛</a></li>
+                                    <li><a href="history.php"><i class="fa fa-paw fa-1x" aria-hidden="true"></i> 歷史紀錄</a></li>
+									<li><a href="later.php"><i class="fa fa-clock-o fa-1x" aria-hidden="true"></i> 稍後觀看</a></li>
+									<li><a href="inform.php"><i class="fa fa-envelope fa-1x" aria-hidden="true"></i> 通知</a></li>
+									
+									<!--<li class="divider"></li>-->
+                                </ul>
+							</li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </div>
+        </div>
+          <div id = "main_content">
+			
+			<div id = "information_text" style="color:#FB8C00; margin-left:5%">
+				電影情報站
+			</div>
+			<hr>
+			<div id = "movienew_text" >
+				<a href="moveinformation_new.html"><i class="fa fa-newspaper-o fa-fw" aria-hidden="true" style="color:#6D4C41;"></i> 電影頭條</a>
+				
+			</div>
+			<br/>
+			<div id ="movienew">
+				
+				<div id = new_text>
+					23個詹姆斯麥艾維James McAvoy！驚悚片《分裂Split》精彩揭開多重人格心靈世界
+				</div>
+				
+				<div id = new_img>
+					<img src="http://img.chinatimes.com/newsphoto/2016-08-01/656/20160801005815.jpg"/>
+					<p>《VOGUE》雜誌提供</p>
+				</div>
+				<div id = new-text>
+					多重人格一直是受到醫界和科學家潛心研究的心理疾病，擁有多重性格的人可以根據他
+					不同的人格特性在主導時改變生理狀態與記憶，這心理疾病也一直是小說和電影的熱門題
+					材。而最近備受期待的多重人格電影《分裂Split》預告片一釋出，馬上掀起話題。
+					《分裂Split》主要敘述男主角凱文（詹姆斯麥艾維James McAvoy飾）已被他信任的心理醫
+					生證實擁有23個人格，包括9歲小男孩、女人…，但還有一個主宰支配所有人格的人格尚未顯
+					現。凱文為了在所有人格的戰爭中存活下去，不得不故意去綁架三名少女，其中包含女主角
+					凱西（安雅泰勒喬伊Anya Taylor Joy飾）。就在現實與幻想的世界即將崩解下，凱文必須
+					想盡辦法戰勝並逃出…
+					《分裂Split》是繼去年賣座驚悚片《探訪The Visit》後，導演奈沙馬蘭M. Night Shyamalan
+					與製片傑森布倫Jason Blum再度合作的驚悚大片。2017年1月20日，奈沙馬蘭M. Night Shyamalan
+					將引你進入一個多重人格的謎樣破碎心靈世界。
+					<br/>※來源：環球影片
+				</div>
+			</div>
+			
+</div>
+
+</body>
+</html>

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>電影情報站</title>
+	<script src="https://use.fontawesome.com/caa469a06e.js"></script>
+	<link rel="shortcut icon" href="http://imageshack.com/a/img924/8909/kRPNSE.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <!-- 最新編譯和最佳化的 CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+    <!-- 選擇性佈景主題 -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <!-- 最新編譯和最佳化的 JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+	<style>
+        body{
+		font-family:"微軟正黑體";
+            /*font-size:16px;*/
+        }
+        
+        ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+		
+		
+		#movie_box{
+			font-size:20pt;
+			
+			padding-top:-3%;
+			padding-left:3%;
+			padding-right:3%;
+		}
+		#movie_box div{
+			display:inline-block;
+			<!--border: 1px solid ;-->
+		}
+		
+		#movie_button{
+			<!--padding-left:70%;-->
+			margin:0px auto;
+			min-width:300px;
+			font-size:18px;
+			
+					
+			
+		}
+		#movie_button a{
+			text-decoration:none;	
+			color:#666;
+		}
+		#movie_button a:hover{
+			color:#EEE;
+
+		}
+	
+		#information_text{
+			font-size:30pt;
+			padding-top:1%;
+			padding-left:1%;
+			text-align:left;
+		}
+			#movienew_text {
+			<!-- padding-top:1%;
+			padding-left:3%;
+			padding-right:3%; -->
+			text-align:left;
+			font-size:20px;
+			margin-left:10%;
+			color:#6D4C41;
+			
+		}
+		#movienew{
+			width:70%;
+			height:
+			min-width:250px;
+			margin:1px auto;
+		}
+		
+		#new_img{
+			font-size:12px;
+			min-width:250px;
+		}
+		.new_img img{
+			display:block;
+			margin:0px auto;
+			width:50%;
+			min-width:230px;
+			
+		}
+		
+		#new_text{
+			font-size:25px;
+			padding-left:0px;
+			 
+			
+		}
+		#new-text{
+			font-size:18px;
+			padding-left:0px;
+			text-align:left;
+		}
+		.new_text{
+			text-align:center;
+			margin:0px auto;
+			text-overflow:inherit;
+			min-width:250px;
+			width:50%;
+		}
+		
+		#cinema{
+			font-size:15px;
+			text-align:center;
+			<!-- padding: 3% 3% 3% 3%; -->
+		}
+		
+    </style>
+</head>
+<body>
+	<div id="all">
+		<div id="top">
+            <nav class="navbar navbar-inverse" role="navigation">
+                <div class="container-fluid">
+                    <!-- Brand and toggle get grouped for better mobile display -->
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="#">Enjoy My Movie life</a>
+                    </div>
+                    <!-- Collect the nav links, forms, and other content for toggling -->
+                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                        
+                        <form class="navbar-form navbar-left" role="search">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Search" style="width:12em; display:inline-block;">
+                                <button type="submit" class="btn btn-default">
+                                    <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                                </button>
+                            </div>
+                        </form>
+						
+                        <ul class="nav navbar-nav navbar-right" style=";">
+							<li><a href="home.html">HOME</a></li>
+                            <li><a href="informationmove.html">排行榜</a></li>
+                            <li><a href="ttt.php">類別</a></li>
+							<li><a href="moveinformation.html">電影情報站</a></li>
+<li><a href="sign.html"><i class="fa fa-sign-out fa-1x" aria-hidden="true"></i> 登出</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><i class="fa fa-user fa-1x" aria-hidden="true"></i> 使用者 <span class="caret"></span></a>
+                                <ul class="dropdown-menu" role="menu">
+                                    <li><a href="information.html"><i class="fa fa-cog fa-1x" aria-hidden="true"></i> 基本資料</a></li>
+                                    <li><a href="mylove.php"><i class="fa fa-heart fa-1x" aria-hidden="true"></i> 我的最愛</a></li>
+                                    <li><a href="history.php"><i class="fa fa-paw fa-1x" aria-hidden="true"></i> 歷史紀錄</a></li>
+									<li><a href="later.php"><i class="fa fa-clock-o fa-1x" aria-hidden="true"></i> 稍後觀看</a></li>
+									<li><a href="inform.php"><i class="fa fa-envelope fa-1x" aria-hidden="true"></i> 通知</a></li>
+									
+									<!--<li class="divider"></li>-->
+                                </ul>
+							</li>
+                        </ul>
+                    </div><!-- /.navbar-collapse -->
+                </div><!-- /.container-fluid -->
+            </nav>
+        </div>
+		<div id = "main_content">
+			
+			<div id = "information_text" style="color:#FB8C00; margin-left:5%">
+			<a href="moveinformation.html">
+				電影情報站
+				</a>
+			</div>
+			<hr>
+			<div id = "movienew_text" >
+				<i class="fa fa-newspaper-o fa-fw" aria-hidden="true" style="color:#6D4C41;"></i>電影頭條
+			</div>
+			</br>
+			<div class = "movienew">
+				<div class = "new_img">
+				<a href="moveinformation_new5.html">
+				<img src="http://img.chinatimes.com/newsphoto/2016-08-01/656/20160801005815.jpg" width="200px" ">
+				</a>
+				</div>
+				<div class = "new_text">
+				<a href="moveinformation_new1.html">
+				23個詹姆斯麥艾維James McAvoy！驚悚片《分裂Split》精彩揭開多重人格心靈世界
+				</a>
+				</div>
+			</div>
+			<div class = "movienew">
+				<div class = "new_img">
+				<a href="moveinformation_new2.html">
+				<img src="http://img.chinatimes.com/newsphoto/2016-07-21/656/20160721005630.jpg" width="200px">
+				</a>
+				</div>
+				<div class = "new_text">
+				<a href="moveinformation_new2.html">
+				《比海還深》幸福是沒有犧牲，就得不到的東西
+				</a>
+				</div>
+			</div>
+			<div class = "movienew">
+				<div class = "new_img">
+				<a href="moveinformation_new3.html">
+				<img src="http://img.chinatimes.com/newsphoto/2016-06-30/656/20160630005545.jpg" width="200px">
+				</a>
+				</div>
+				<div class = "new_text">
+				<a href="moveinformation_new3.html">
+				羅柏蘭登教授回來了！湯姆漢克在《達文西密碼》系列電影新作《地獄》中再展身手
+				</a>
+				</div>
+			</div>
+			<div class = "movienew">
+				<div class = "new_img">
+				<a href="moveinformation_new4.html">
+				<img src="http://img.ltn.com.tw/Upload/ent/page/800/2016/08/09/1790344_1.jpg" width="200px">
+				</a>
+				</div>
+				<div class = "new_text">
+				<a href="moveinformation_new4.html">
+				誰是兇手？《哭聲》結局引爭論 導演卻說...
+				</a>
+				</div>
+			</div>
+			<div class = "movienew">
+				<div class = "new_img">
+				<a href="moveinformation_new5.html">
+				<img src="http://pgw.udn.com.tw/gw/photo.php?u=http://uc.udn.com.tw/photo/2016/08/08/realtime/2467151.jpg&sl=W&fw=750&exp=3600" width="200px" >
+				</a>
+				</div>
+				<div class = "new_text">
+				<a href="moveinformation_new5.html">
+				超威！「自殺突擊隊」上映4天就破億
+				</a>
+				</div>
+				</br>
+				</br>
+				</br>
+				</br>
+				</br>
+			</div>
+			</div>
+		</div>	
+	</div>
+</body>
+</html>
